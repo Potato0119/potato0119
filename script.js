@@ -1,22 +1,43 @@
+// 起始動畫
 const str = "<p>嗨 很高興認識你<br>我叫馬鈴薯 英文是Potato0119<br>你可以叫我馬鈴薯 或 破鐵頭 或 Potato<br>如果有靜態網站設計的需求可以找我<br>從編寫程式到網站架設幫您一條龍服務</p>"
 const strFinal = "嗨 很高興認識你<br>我叫馬鈴薯 英文是Potato0119<br>你可以叫我馬鈴薯 或 破鐵頭 或 Potato<br>如果有靜態網站設計的需求可以找我<br>從編寫程式到網站架設幫您一條龍服務"
-
+const potato = "Potato0119's Web"
 function start(){
   setTimeout(() => {
-    const typing = document.querySelector(".main p")
+    document.querySelector(".title1").style = "color: #eab532;"
+    document.querySelector(".title2").style = "color: #9154d2;"
+  }, 1000)
+
+  setTimeout(() => {
+    const sub = document.querySelector(".sub1")
     i=1
-    var loop = setInterval(() => {
-      typing.textContent = str.slice(0,i)
+    var loop1 = setInterval(() => {
+      sub.innerHTML = potato.slice(0,i)
       i++
-      if (i == str.length+2){
-        clearInterval(loop)
-        setTimeout(() => {typing.innerHTML = strFinal}, 500)
-        setTimeout(() => {typing.style = "text-shadow: 0 0 1vw #00c8ff;"}, 1000)
+      if (i == potato.length+2){
+        clearInterval(loop1)
+        setTimeout(() => {sub.style = "text-shadow: 0 0 1vw #eab532;"}, 500)
       }
     }, 50);
-  }, 1000)
+
+    setTimeout(() => {
+      const typing = document.querySelector(".main p")
+      j=1
+      var loop2 = setInterval(() => {
+        typing.textContent = str.slice(0,j)
+        j++
+        if (j == str.length+2){
+          clearInterval(loop2)
+          setTimeout(() => {typing.innerHTML = strFinal}, 500)
+          setTimeout(() => {typing.style = "text-shadow: 0 0 1vw #9154d2;"}, 1000)
+        }
+    }, 50);
+    }, 2000)
+
+  }, 2000)
 }
 
+// Discord
 function discord(){
   Swal.fire({
     title: '我的Discord',
@@ -26,6 +47,7 @@ function discord(){
   });
 }
 
+// Shop
 const sblock1  = document.getElementById('sblock1');
 const sub1 = document.getElementById('sub1');
 sblock1.addEventListener('mouseenter', function() {
@@ -69,3 +91,38 @@ sblock4.addEventListener('mouseleave', function() {
     sblock4.style.height="calc((14vw * 600 / 500) + 4vw)";
     sub4.style.opacity="0"
 });
+
+// header
+function earthmove() {
+  if (window.scrollY >= window.innerHeight) {
+    document.getElementById('header').style="background: #5b5b5b67;";
+  }else{
+    document.getElementById('header').style="background: transparent;";
+  }
+}
+window.addEventListener('scroll', earthmove);
+
+function home(){
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+function about(){
+  window.scrollTo({
+    top: window.innerHeight,
+    behavior: 'smooth'
+  });
+}
+function project(){
+  window.scrollTo({
+    top: window.innerHeight * 2,
+    behavior: 'smooth'
+  });
+}
+function shop(){
+  window.scrollTo({
+    top: window.innerHeight * 3,
+    behavior: 'smooth'
+  });
+}

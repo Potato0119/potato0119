@@ -9,13 +9,21 @@ body {
 /* body */
 
 /* header */
+.header{
+  transition: background 200ms ease-in-out;
+  width: 100vw;
+  height: calc((100vw * 730 / 2560) * 0.02 + 4vw);
+  position: fixed;
+  top:0px;
+  left:0px;
+  z-index: 9;
+}
 .title {
   display: flex;
   align-items: center;
   position: absolute;
   top: calc((100vw * 730 / 2560) * 0.01);
   left: 10px;
-  z-index: 999;
   z-index: 2;
   font-weight: bold;
 }
@@ -28,6 +36,13 @@ body {
   font-size: 2vw;
   display: flex;
   color: #fff;
+  margin-left: 1vw;
+}
+.title1{
+  transition: color 500ms ease-in-out;
+}
+.title2{
+  transition: color 500ms ease-in-out;
 }
 .sub {
   z-index: 2;
@@ -41,12 +56,15 @@ body {
   line-height: 6 0px;
   font-family: "Kode Mono", monospace;
 }
+.sub1{
+  transition: text-shadow 200ms ease-in-out;
+}
 .nav-pc {
   width: 100%;
   display: flex;
   align-items: center;
   position: absolute;
-  top: calc((100vw * 730 / 2560) * 0.04);
+  top: calc((100vw * 730 / 2560) * 0.01 + 1vw);
   right: 0;
   z-index: 2;
 }
@@ -64,12 +82,13 @@ body {
   margin-right: 10px;
 }
 .nav-pc ul li:hover{
-  text-shadow: 0 0 10px #00c8ff;
+  text-shadow: 0 0 10px #eab532;
 }
 .nav-pc ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 24px;
+  cursor: pointer;
 }
 .nav-pc ul li a::after {
   content: "";
@@ -79,7 +98,7 @@ body {
   display: block;
   background: #fff;
   transition: 300ms;
-  box-shadow: 0 0 10px #00c8ff;
+  box-shadow: 0 0 10px #eab532;
 }
 .nav-pc ul li a:hover::after {
   width: 100%;
@@ -147,7 +166,7 @@ body {
 }
 .about-text{
   text-align: center;
-  margin-top: 4vw;
+  margin-top: 5vw;
   font-size: 1.5vw;
 }
 .about-text span{
@@ -446,7 +465,7 @@ body {
 }
 .shop-text{
   text-align: center;
-  margin-top: 4vw;
+  margin-top: 5vw;
   font-size: 1.5vw;
 }
 .sblock{

@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+  <!-- meta, title -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Minecraft伺服器 蠑螈世界三周年慶典招募！伺服器版本1.20.4 Java基岩皆可玩 伺服器24小時運行 而且是插件伺服器 蠑螈世界期待你加入 一同打造屬於我們的奇幻三周年冒險！">
   <title>馬鈴薯的個人網站</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="./reset.css" />
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./mobile.css" />
-  <link data-default-icon="/image/icon.png" data-badged-icon="/image/icon.png" rel="shortcut icon" href="/image/icon.png"/>
-  <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet"/>
+
+  <!-- icon, robots-->
+  <link type="image/x-icon" href="./favicon.ico" rel="icon" />
+  <link type="image/x-icon" href="./favicon.ico" rel="bookmark" />
+  <link data-default-icon="./favicon.ico" data-badged-icon="./favicon.ico" rel="shortcut icon" href="./favicon.ico"/>
+  <link rel="robots" href="./robots.txt" />
+
+  <!-- font and other-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rochester&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet"/>
 </head>
 <body onload="start()" id="home">
-  <div>
+  <div class="header" id="header">
     <div class="title">
       <img src="/image/icon.png" />
-      <p>馬鈴薯的個人網站</p>
+      <p><span class="title1">馬鈴薯</span><span class="title2">的個人網站</span></p>
     </div>
     <nav class="nav-pc">
       <ul class="nav-ul">
-        <li><a href="#home">首頁</a></li>
-        <li><a href="#about">關於我</a></li>
-        <li><a href="#project">作品集</a></li>
-        <li><a href="#shop">客製網站服務</a></li>
-
+        <li><a onclick="home()">首頁</a></li>
+        <li><a onclick="about()">關於我</a></li>
+        <li><a onclick="project()">作品集</a></li>
+        <li><a onclick="shop()">客製網站服務</a></li>
       </ul>
     </nav>
-    <span class="sub">
-      <p class="sub1">Potato0119's Web</p>
-    </span>
   </div>
+  
+  <span class="sub">
+    <p class="sub1"></p>
+  </span>
 
   <div class="main">
     <img class="banner" src="/image/banner.png" />
