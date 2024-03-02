@@ -6,6 +6,9 @@ body {
   background: #d5d7d8;
   font-family: "Noto Sans TC", sans-serif;
 }
+.rwd{
+  display: none;
+}
 /* body */
 
 /* header */
@@ -138,14 +141,6 @@ body {
 }
 /* main */
 
-.linear{
-  position: absolute;
-  top:100vh;
-  left:0;
-  width: 100vw;
-  height: 20vh;
-  z-index: -1;
-}
 /* about */
 .about {
   width: 100vw;
@@ -242,6 +237,9 @@ body {
   height: 1.2vw;
   box-shadow: 5px 5px 10px #bbbbbb;
 }
+.mskill1, .mskill2{
+  display: none;
+}
 .skill{
   display: inline-block;
   position: absolute;
@@ -294,6 +292,9 @@ body {
   width: 42vw;
   height: 1.2vw;
   box-shadow: 5px 5px 10px #bbbbbb;
+}
+.mgame1, .mgame2{
+  display: none;
 }
 .game{
   display: inline-block;
@@ -445,7 +446,7 @@ body {
 }
 /* project */
 
-/* project */
+/* shop */
 .shop {
   width: 100vw;
   height: 100vh;
@@ -476,7 +477,6 @@ body {
   border-radius: 1vw;
   transition: height 1000ms ease-in-out;
   overflow: hidden;
-
 }
 #sblock1:hover{
   box-shadow: 0 0 3vw #75321d;
