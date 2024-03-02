@@ -94,7 +94,7 @@ sblock4.addEventListener('mouseleave', function() {
 
 // header
 function earthmove() {
-  if (window.scrollY >= window.innerHeight) {
+  if (window.scrollY >= window.innerHeight / 2) {
     document.getElementById('header').style="background: #5b5b5b67;";
   }else{
     document.getElementById('header').style="background: transparent;";
