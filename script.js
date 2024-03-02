@@ -93,14 +93,14 @@ sblock4.addEventListener('mouseleave', function() {
 });
 
 // header
-function earthmove() {
-  if (window.scrollY >= window.innerHeight / 2) {
+function header() {
+  if (window.scrollY >= window.innerHeight - ((window.innerWidth * 730 / 2560) * 0.02 + window.innerWidth * 0.04)) {
     document.getElementById('header').style="background: #5b5b5b67;";
   }else{
     document.getElementById('header').style="background: transparent;";
   }
 }
-window.addEventListener('scroll', earthmove);
+window.addEventListener('scroll', header);
 
 function home(){
   window.scrollTo({
