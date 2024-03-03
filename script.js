@@ -95,7 +95,7 @@ function discord(){
   Swal.fire({
     title: '我的Discord',
     text: '@potato_tw',
-    icon: "success",
+    icon: "info",
     confirmButtonText: '酷',
   });
 }
@@ -195,8 +195,8 @@ function header() {
 window.addEventListener('scroll', header);
 
 function home(){
-  window.scrollTo({
-    top: 0,
+  const homePage = document.querySelector('body');
+  homePage.scrollIntoView({
     behavior: 'smooth'
   });
 }
