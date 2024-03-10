@@ -102,7 +102,7 @@
       if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
         if ($_POST["title"] == "" or $_POST["date"] == "" or $_POST["content"] == ""){
           echo "<p class='export'>資料為空</p>";
-        }else if ($_POST["sso"] == "w") {
+        }else if ($_POST["sso"] == "guess") {
           $maxid = 0;
           while($row = $allData->fetch_assoc()) {
             if ($maxid < $row["id"]){
