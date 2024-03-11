@@ -150,9 +150,10 @@ body {
 }
 .blogDate p{
     font-size: 1vw;
+    margin-left: auto;
     margin-right: 1em;
     font-weight: bold;
-    margin-left: auto;
+    
 }
 .blogContent{
     position: absolute;
