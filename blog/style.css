@@ -11,6 +11,7 @@ body {
   transform: translate(-50%,-50%);
   top: 50%;
   left: 50%;
+  width: 120vw;
 }
 /* body */
 /* header */
@@ -151,6 +152,7 @@ body {
     font-size: 1vw;
     margin-right: 1em;
     font-weight: bold;
+    margin-left: auto;
 }
 .blogContent{
     position: absolute;
