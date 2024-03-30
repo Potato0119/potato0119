@@ -1,0 +1,88 @@
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    font-family: "Noto Sans TC", sans-serif;
+}
+.background{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.background img{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 110vw;
+    height: calc(110vw / 16 * 9);
+}
+.all{
+    width: 30vw;
+    height: 30vw;
+    background-color: rgba(255, 255, 255, 0.320); /* 半透明白色 */
+    backdrop-filter: blur(10px);
+    text-align: center;
+    border-radius: 5vw;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    color:#fff;
+}
+.content{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:45%;
+    left:50%;
+    width: 30vw;
+    text-shadow: 0 0 10px #eab532;
+}
+.icon{
+    width: 6vw;
+    height: 6vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.title{
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+.label{
+    font-size: 1.5vw;
+}
+.username,.password{
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
+}
+.btn {
+  width: 8vw;
+  height: 2vw;
+  font-size: 1vw;
+  font-weight:bold;
+  color: #fff;
+  cursor: pointer;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  margin-top: 0.5vw;
+}
+
+.btn:hover {
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+}
