@@ -492,6 +492,9 @@
       top:22vh;
       left: calc(50% + 15vh);
     }
+    .square img{
+      border-radius: 1vh;
+    }
     /* 第三塊 */
 
     /* 第四塊 */
