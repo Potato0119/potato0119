@@ -93,8 +93,8 @@ function start(){
 // Discord
 function discord(){
   Swal.fire({
-    title: '我的Discord',
-    text: '@potato_tw',
+    title: '我的聯繫方式',
+    html: "Instagram: @potato_0119_<br>Discord: @potato_tw",
     icon: "info",
     confirmButtonText: '酷',
   });
