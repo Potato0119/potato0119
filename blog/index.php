@@ -63,6 +63,5 @@
                 </div>' . $contents . '<div class="footer"><p>Copyright © 2024・馬鈴薯Potato0119</p></div></div>';
       echo $blog;
     ?>
-    <script src="./script.js"></script>
 </body>
 </html>
