@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>登入 | 馬鈴薯的個人網站 | Potato0119's Web</title>
-  <link rel="stylesheet" href="./reset.css" />
+  <link rel="stylesheet" href="./../reset.css" />
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./mobile.css" />
   <link data-default-icon="../image/icon.png" data-badged-icon="../image/icon.png" rel="shortcut icon" href="../image/icon.png"/>

@@ -2,21 +2,23 @@ var bannerID = 1
 var maxID = 3
 var nextID = 0
 function change(time){
-    oldBanner = document.getElementById("banner"+nextID.toString())
-    newBanner = document.getElementById("banner"+time.toString())
-    oldDot = document.getElementById("dot"+nextID.toString())
-    newDot = document.getElementById("dot"+time.toString())
-    oldDot.classList.remove("fa-circle-dot")
-    oldDot.classList.add("fa-circle")
-    newDot.classList.add("fa-circle-dot")
-    newDot.classList.remove("fa-circle")
-    newBanner.style.zIndex="1";
-    oldBanner.style.zIndex="0";
-    setTimeout(() => {
-        oldBanner.style.left="100vw";
-    }, 300);
-    newBanner.style.left="0vw";
-    nextID = time
+    if (time!=nextID){
+        oldBanner = document.getElementById("banner"+nextID.toString())
+        newBanner = document.getElementById("banner"+time.toString())
+        oldDot = document.getElementById("dot"+nextID.toString())
+        newDot = document.getElementById("dot"+time.toString())
+        oldDot.classList.remove("fa-circle-dot")
+        oldDot.classList.add("fa-circle")
+        newDot.classList.add("fa-circle-dot")
+        newDot.classList.remove("fa-circle")
+        newBanner.style.zIndex="1";
+        oldBanner.style.zIndex="0";
+        setTimeout(() => {
+            oldBanner.style.left="100vw";
+        }, 300);
+        newBanner.style.left="0vw";
+        nextID = time
+    }
 }
 const banner = setInterval(() => {
     nextID = bannerID + 1

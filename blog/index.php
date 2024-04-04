@@ -23,7 +23,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <img class="bg" src="./../image/bg.jpg"/>
+    <img class="bg" src="./../image/bg.png"/>
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
         <div class="header" id="header">
           <div class="title" id="title">
