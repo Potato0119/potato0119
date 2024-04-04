@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background"><img src="/image/login.png"></div>
+    <div class="background"><img src="/image/login.jpg"></div>
     <div class="all">
       <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" autocomplete="off">
         <div class="content">

@@ -122,17 +122,36 @@ body {
 .main p{
   position: absolute;
   transform: translate(-50%,0%);
-  bottom: 3%;
+  bottom: 6%;
   left: 50%;
   text-align: center;
   color: #fff;
   font-size: 2vw;
   line-height: 3vw;
   transition: text-shadow 200ms ease-in-out;
+  z-index: 2;
 }
 .banner {
-  width: 115vw;
-  height: calc(115vw/16*9);
+  width: 100vw;
+  height: calc(100vw/16*9);
+  transition: left 300ms ease-in-out;
+  position: absolute;
+  left: 100vw;
+}
+#banner1{
+    left: 0vw;
+}
+.mainDot{
+    position: absolute;
+    transform: translate(-50%,0);
+    bottom: 2%;
+    left:50%;
+    z-index: 2;
+    font-size: 1.5vw;
+}
+.mainDot i{
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 .mbanner{
   width: 100vw;
