@@ -191,4 +191,10 @@ body {
   .nav-pc ul li a{
     font-size: 2vw;
   }
+  .bg{
+    top: 50%;
+    left: 50%;
+    height: 110vh;
+    width: calc(110vh / 9 * 16);
+  }
 }
