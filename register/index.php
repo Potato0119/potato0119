@@ -113,11 +113,13 @@
                   echo "<script>
                         Swal.fire({
                           title: '註冊成功',
-                          text: '歡迎使用者 ".$username."!',
+                          html: '歡迎使用者 ".$username."!<br>即將為您跳轉登入頁面',
                           icon: 'success',
                           timer: 5000,
                           timerProgressBar: true,
-                        });
+                        }).then(function() {
+                          window.location.href = '../login/index.php';
+                      });
                       </script>";
               }
           };

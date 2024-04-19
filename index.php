@@ -32,6 +32,14 @@
   <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet"/>
 </head>
 <body onload="start()">
+  <?php
+    session_start();
+    if(isset($_SESSION['username'])) {
+      $username = "歡迎使用者 " . $_SESSION['username'];
+    }else{
+      $username = "登入註冊系統";
+    }
+  ?>
   <div class="header" id="header">
     <div class="title" id="title">
       <img src="/image/icon.png" />
@@ -43,8 +51,8 @@
         <li><a onclick="about()">關於我</a></li>
         <li><a onclick="project()">作品集</a></li>
         <li><a onclick="shop()">客製網站服務</a></li>
-        <li><a href="./login/index.php">登入註冊系統</a></li>
         <li><a href="./blog/index.php">馬鈴薯Blog</a></li>
+        <li><a href="./login/index.php"><?php echo $username; ?></a></li>
       </ul>
     </nav>
   </div>

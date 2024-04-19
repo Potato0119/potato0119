@@ -25,7 +25,7 @@
           <br>
           <label for="password">密碼 Password</label>
           <br>
-          <input class="password" id="password" name="password" placeholder="Password ...">
+          <input class="password" type="password" id="password" name="password" placeholder="Password ...">
           <br>
           <input class="btn" type="submit" name="login" value="登入">
           <br>
@@ -61,14 +61,18 @@
                     if ($row["username"] == $username){
                       $passwordIs = $row["password"];
                       if (password_verify($password, $passwordIs)) {
+                          session_start();
+                          $_SESSION['username'] = $username;
                           echo "<script>
                             Swal.fire({
                               title: '登入成功',
-                              text: '歡迎使用者 ".$username."!',
+                              html: '歡迎使用者 ".$username."!<br>即將為您跳轉登入頁面',
                               icon: 'success',
                               timer: 5000,
                               timerProgressBar: true,
-                            });
+                            }).then(function() {
+                              window.location.href = '../../index.php';
+                          });;
                           </script>";
                       }else{
                           echo "<script>
