@@ -74,6 +74,7 @@
                               window.location.href = '../../index.php';
                           });;
                           </script>";
+                          break;
                       }else{
                           echo "<script>
                             Swal.fire({
@@ -84,6 +85,7 @@
                               timerProgressBar: true,
                             });
                           </script>";
+                          break;
                       };
                     }else{
                       echo "<script>
@@ -95,6 +97,7 @@
                           timerProgressBar: true,
                         });
                       </script>";
+                      break;
                     };
                   }
                 } else {
