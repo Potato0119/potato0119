@@ -32,7 +32,7 @@
           </div>
           <nav class="nav-pc">
             <ul class="nav-ul">
-              <li><a href="./../index.html">首頁</a></li>
+              <li><a href="./../index.php">首頁</a></li>
               <li><a href="./index.php">馬鈴薯Blog</a></li>
             </ul>
           </nav>
