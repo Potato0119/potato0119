@@ -36,8 +36,23 @@
     session_start();
     if(isset($_SESSION['username'])) {
       $username = "歡迎使用者 " . $_SESSION['username'];
+      $list = "<form method='post' action='<?php echo \$_SERVER[\"PHP_SELF\"]; ?>' autocomplete='off'><ul class='accList'><li><input type='submit' name='logout' value='登出'></p></li></ul></form>";
     }else{
       $username = "登入註冊系統";
+      $list = "";
+    }
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["logout"])) {
+      $_SESSION = array();
+      if (ini_get("session.use_cookies")) {
+          $params = session_get_cookie_params();
+          setcookie(session_name(), '', time() - 42000,
+              $params["path"], $params["domain"],
+              $params["secure"], $params["httponly"]
+          );
+      }
+      session_destroy();
+      header("Location: index.php");
     }
   ?>
   <div class="header" id="header">
@@ -52,7 +67,10 @@
         <li><a onclick="project()">作品集</a></li>
         <li><a onclick="shop()">客製網站服務</a></li>
         <li><a href="./blog/index.php">馬鈴薯Blog</a></li>
-        <li><a href="./login/index.php"><?php echo $username; ?></a></li>
+        <br class="rwd">
+        <li class="loginli"><a href="./login/index.php"><?php echo $username; ?></a>
+        <?php echo $list ?>      
+        </li>
       </ul>
     </nav>
   </div>
