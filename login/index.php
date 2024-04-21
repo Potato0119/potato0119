@@ -97,7 +97,6 @@
                           timerProgressBar: true,
                         });
                       </script>";
-                      break;
                     };
                   }
                 } else {
