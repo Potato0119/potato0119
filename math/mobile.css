@@ -1,0 +1,225 @@
+@media screen and (max-width: 1199px) {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    /* body */
+    body {
+      background: #d5d7d8;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    .rwd{
+      display: none;
+    }
+    /* body */
+
+    /* header */
+    .header{
+      transition: background 200ms ease-in-out;
+      width: 100%;
+      height: calc((100vh * 730 / 2560) * 0.02 + 4vh);
+      position: absolute;
+      top:0px;
+      left:0px;
+      z-index: 9;
+      background: #a5a7a8;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: calc((100vh * 730 / 2560) * 0.01);
+      left: 10px;
+      z-index: 2;
+      font-weight: bold;
+    }
+    .title img {
+      width: 4vh;
+      height: 4vh;
+      display: flex;
+    }
+    .title p {
+      font-size: 2vh;
+      display: flex;
+      color: #fff;
+      margin-left: 1vh;
+    }
+    .nav-pc {
+      display: block;
+      position: absolute;
+      top: calc((100vh * 730 / 2560) * 0.01 + 1vh);
+      right: 0;
+      z-index: 2;
+    }
+    .nav-pc img,
+    .nav-pc ul,
+    .nav-pc ul li {
+      display: inline-block;
+    }
+    .nav-pc ul {
+      margin-left: auto;
+      margin-top: 0.5vw;
+      margin-right: 10px;
+    }
+    .nav-pc ul li {
+      margin-right: 10px;
+    }
+    .nav-pc ul li:hover{
+      text-shadow: 0 0 10px #eab532;
+    }
+    .nav-pc ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .nav-pc ul li a::after {
+      content: "";
+      width: 0px;
+      height: 3px;
+      margin-top: 3px;
+      display: block;
+      background: #fff;
+      transition: 300ms;
+      box-shadow: 0 0 10px #eab532;
+    }
+    .nav-pc ul li a:hover::after {
+      width: 100%;
+    }
+    /* header */
+
+    /* content */
+    .content{
+        width: 100%;
+        height: calc(100vw - ((100vh * 730 / 2560) * 0.02 + 4vh));
+        position: absolute;
+        top: calc((100vh * 730 / 2560) * 0.02 + 4vh);
+        left:0;
+    }
+    .select{
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 8vh;
+        border: #16b9ff 0.4vh solid;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    .select div{
+      margin-left: 1vh;
+      margin-right: 1vh;
+      margin-top: 0.5vh;
+      margin-bottom: 0.5vh;
+    }
+    .select div p{
+        display: inline-block;
+        padding: 1vh;
+        border-radius: 6vh;
+        font-size: 2vh;
+        cursor: pointer;
+    }
+    .select div p:hover{
+      background-color: #69d2ff;
+    }
+    .calculator{
+      width: 100%;
+      height: calc((100vw - ((100vh * 730 / 2560) * 0.02 + 4vh)) - 3vh);
+      position: absolute;
+    }
+    .calculator Div{
+      display: flex;
+      font-size: 4vh;
+      margin-top: 4vh;
+      margin-left: 4vh;
+    }
+    .calculator Div *{
+      display: flex;
+    }
+    .calculator Div input{
+      display: flex;
+      height: 4vh;
+      font-size: 4vh;
+      width: 2em;
+    }
+    .calculator Div p{
+      display: flex;
+    }
+    .pDiv input{
+      position: absolute;
+      display: flex;
+      height: 4% !important;
+      font-size: 1.6vh !important;
+      width: 2em !important;
+    }
+    #p1{
+      top:4vh;
+      left:7vh;
+      margin-bottom: 0.5vh;
+    }
+    #p2{
+      margin-top: 0.5vh;
+      top:6vh;
+      left:7vh;
+    }
+    .pSub{
+      position: absolute;
+      top:4vh;
+      left:11vh;
+    }
+    #pResult{
+      top:4vh;
+      left:15vh;
+      height: 4vh !important;
+      font-size: 4vh !important;
+      width: 2em;
+    }
+    .cDiv input{
+      position: absolute;
+      display: flex;
+      height: 4% !important;
+      font-size: 1.6vh !important;
+      width: 2em !important;
+    }
+    #c1{
+      top:4vh;
+      left:7vh;
+      margin-bottom: 0.5vh;
+    }
+    #c2{
+      margin-top: 0.5vh;
+      top:6vh;
+      left:7vh;
+    }
+    .cSub{
+      position: absolute;
+      top:4vh;
+      left:11vh;
+    }
+    #cResult{
+      top:4vh;
+      left:15vh;
+      height: 4vh !important;
+      font-size: 4vh !important;
+      width: 2em;
+    }
+    /* content */
+
+    /* footer */
+    .footer {
+      width: 100%;
+      height: calc((100vh * 730 / 2560) * 0.02 + 4vh);
+      position: absolute;
+      top: 100vh;
+      left: 0vh;
+      background-color: #fff;
+    }
+    .footer p{
+      font-size: 1.5vh;
+      color: #000;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      top:50%;
+      left:50%;
+      text-align: center;
+      width: 20em;
+    }
+    /* footer */
+}

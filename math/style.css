@@ -1,0 +1,223 @@
+
+::-webkit-scrollbar {
+  display: none;
+}
+/* body */
+body {
+  background: #d5d7d8;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.rwd{
+  display: none;
+}
+/* body */
+
+/* header */
+.header{
+  transition: background 200ms ease-in-out;
+  width: 100vw;
+  height: calc((100vw * 730 / 2560) * 0.02 + 4vw);
+  position: absolute;
+  top:0px;
+  left:0px;
+  z-index: 9;
+  background: #a5a7a8;
+}
+.title {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: calc((100vw * 730 / 2560) * 0.01);
+  left: 10px;
+  z-index: 2;
+  font-weight: bold;
+}
+.title img {
+  width: 4vw;
+  height: 4vw;
+  display: flex;
+}
+.title p {
+  font-size: 2vw;
+  display: flex;
+  color: #fff;
+  margin-left: 1vw;
+}
+.nav-pc {
+  display: block;
+  position: absolute;
+  top: calc((100vw * 730 / 2560) * 0.01 + 1vw);
+  right: 0;
+  z-index: 2;
+}
+.nav-pc img,
+.nav-pc ul,
+.nav-pc ul li {
+  display: inline-block;
+}
+.nav-pc ul {
+  margin-left: auto;
+  margin-top: 0.5vh;
+  margin-right: 10px;
+}
+.nav-pc ul li {
+  margin-right: 10px;
+}
+.nav-pc ul li:hover{
+  text-shadow: 0 0 10px #eab532;
+}
+.nav-pc ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav-pc ul li a::after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  margin-top: 3px;
+  display: block;
+  background: #fff;
+  transition: 300ms;
+  box-shadow: 0 0 10px #eab532;
+}
+.nav-pc ul li a:hover::after {
+  width: 100%;
+}
+/* header */
+
+/* content */
+.content{
+    width: 100%;
+    height: calc(100vh - ((100vw * 730 / 2560) * 0.02 + 4vw));
+    position: absolute;
+    top: calc((100vw * 730 / 2560) * 0.02 + 4vw);
+    left:0;
+}
+.select{
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 4vw;
+    border: #16b9ff 0.2vw solid;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+.select div{
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  margin-top: 0.25vw;
+  margin-bottom: 0.25vw;
+}
+.select div p{
+    display: inline-block;
+    padding: 0.5vw;
+    border-radius: 3vw;
+    font-size: 1vw;
+    cursor: pointer;
+}
+.select div p:hover{
+  background-color: #69d2ff;
+}
+.calculator{
+  width: 100%;
+  height: calc((100vh - ((100vw * 730 / 2560) * 0.02 + 4vw)) - 3vw);
+  position: absolute;
+}
+.calculator Div{
+  display: flex;
+  font-size: 2vw;
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+.calculator Div *{
+  display: flex;
+}
+.calculator Div input{
+  display: flex;
+  height: 2vw;
+  font-size: 2vw;
+  width: 2em;
+}
+.calculator Div p{
+  display: flex;
+}
+.pDiv input{
+  position: absolute;
+  display: flex;
+  height: 2% !important;
+  font-size: 0.8vw !important;
+  width: 2em !important;
+}
+#p1{
+  top:2vw;
+  left:3.5vw;
+  margin-bottom: 0.25vw;
+}
+#p2{
+  margin-top: 0.25vw;
+  top:3vw;
+  left:3.5vw;
+}
+.pSub{
+  position: absolute;
+  top:2vw;
+  left:5.5vw;
+}
+#pResult{
+  top:2vw;
+  left:7.5vw;
+  height: 2vw !important;
+  font-size: 2vw !important;
+  width: 2em;
+}
+.cDiv input{
+  position: absolute;
+  display: flex;
+  height: 2% !important;
+  font-size: 0.8vw !important;
+  width: 2em !important;
+}
+#c1{
+  top:2vw;
+  left:3.5vw;
+  margin-bottom: 0.25vw;
+}
+#c2{
+  margin-top: 0.25vw;
+  top:3vw;
+  left:3.5vw;
+}
+.cSub{
+  position: absolute;
+  top:2vw;
+  left:5.5vw;
+}
+#cResult{
+  top:2vw;
+  left:7.5vw;
+  height: 2vw !important;
+  font-size: 2vw !important;
+  width: 2em;
+}
+/* content */
+
+/* footer */
+.footer {
+  width: 100vw;
+  height: calc((100vw * 730 / 2560) * 0.02 + 4vw);
+  position: absolute;
+  top: 100vh;
+  left: 0vw;
+  background-color: #fff;
+}
+.footer p{
+  font-size: 1.5vw;
+  color: #000;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  text-align: center;
+}
+/* footer */

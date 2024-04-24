@@ -56,6 +56,7 @@
         <li><a onclick="about()">關於我</a></li>
         <li><a onclick="project()">作品集</a></li>
         <li><a onclick="shop()">客製網站服務</a></li>
+        <li><a href="./math/index.html">高一數學計算機</a></li>
         <li><a href="./blog/index.php">馬鈴薯Blog</a></li>
         <li class="loginli"><a href="./login/index.php"><?php echo $username; ?></a>
         <form method='post' action='<?php echo $_SERVER["PHP_SELF"]; ?>'><ul class='accList'><li><input type='submit' name='logout' value='登出'></p></li></ul></form>
@@ -144,7 +145,7 @@
     <div class="Gblock">
       <a href="https://reurl.cc/YV9M3X" target="_blank"><div class="block block1"><img src="/image/ts.png" ><p>DC-廢話機器人</p></div></a>
       <a href="https://reurl.cc/xLK6aE" target="_blank"><div class="block block2"><img src="/image/betBOTato.png" ><p>DC-對賭機器人</p></div></a>
-      <a href="https://axolotlworld.online/" target="_blank"><div class="block block3"><img src="/image/axolotl.png" ><p>蠑螈世界官方網站</p></div></a>
+      <a href="/math/index.html"><div class="block block3"><img src="/image/math.png" ><p>高一數學計算機</p></div></a>
       <a href="https://www.instagram.com/reel/Cs-57kCOqV2/" target="_blank"><div class="block block4"><img src="/image/media1.png" ><p>IG-小帥的冒險1</p></div></a>
       <a href="https://www.instagram.com/reel/Cs_a2gZsAYp/" target="_blank"><div class="block block5"><img src="/image/media1.png" ><p>IG-小帥的冒險2</p></div></a>
       <a href="https://www.instagram.com/reel/CtBE1KsOUOi/" target="_blank"><div class="block block6"><img src="/image/media1.png" ><p>IG-小帥的冒險3</p></div></a>
