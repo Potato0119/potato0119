@@ -142,6 +142,21 @@ body {
 .calculator Div p{
   display: flex;
 }
+.calculator Div button{
+  position: absolute;
+  top:2.25vw;
+  left:14vw;
+  height: 2vw;
+  text-align: center;
+  background-color: #69d2ff;
+  border: #16b9ff 0.25vw solid;
+  border-radius: 2vw;
+  cursor: pointer;
+}
+.calculator Div button p{
+  line-height: 1.5vw;
+  font-size: 1vw;
+}
 .pDiv input{
   position: absolute;
   display: flex;
@@ -165,11 +180,15 @@ body {
   left:5.5vw;
 }
 #pResult{
+  position: absolute;
+  display: flex;
   top:2vw;
   left:7.5vw;
   height: 2vw !important;
   font-size: 2vw !important;
-  width: 2em;
+}
+#pBtn{
+  left:12.5vw;
 }
 .cDiv input{
   position: absolute;
@@ -194,11 +213,16 @@ body {
   left:5.5vw;
 }
 #cResult{
+  position: absolute;
+  display: flex;
   top:2vw;
   left:7.5vw;
   height: 2vw !important;
   font-size: 2vw !important;
   width: 2em;
+}
+#cBtn{
+  left:12.5vw;
 }
 /* content */
 

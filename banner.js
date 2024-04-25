@@ -1,5 +1,5 @@
 var bannerID = 1
-var maxID = 3
+var maxID = 6
 var nextID = 0
 function change(time){
     if (time!=nextID){
@@ -22,7 +22,7 @@ function change(time){
 }
 const banner = setInterval(() => {
     nextID = bannerID + 1
-    if (nextID > 3){
+    if (nextID > 6){
         nextID = 1
     }
     oldBanner = document.getElementById("banner"+bannerID.toString())
@@ -41,9 +41,14 @@ const banner = setInterval(() => {
     newBanner.style.left="0vw";
     bannerID = nextID
 }, 3000)
+
 dot1 = document.getElementById("dot1")
 dot2 = document.getElementById("dot2")
 dot3 = document.getElementById("dot3")
+dot4 = document.getElementById("dot4")
+dot5 = document.getElementById("dot5")
+dot6 = document.getElementById("dot6")
+
 dot1.addEventListener('mouseenter', function() {
     dot1.classList.add("fa-circle-dot")
     dot1.classList.remove("fa-circle")
@@ -90,6 +95,57 @@ dot3.addEventListener('mouseleave', function() {
 });
 dot3.addEventListener('click', function() {
     bannerID=3
+    change(bannerID)
+    try {
+        clearInterval(banner);
+    } catch (error) {}
+});
+dot4.addEventListener('mouseenter', function() {
+    dot4.classList.add("fa-circle-dot")
+    dot4.classList.remove("fa-circle")
+});
+dot4.addEventListener('mouseleave', function() {
+    if (bannerID != 4){
+        dot4.classList.remove("fa-circle-dot")
+        dot4.classList.add("fa-circle")
+    }
+});
+dot4.addEventListener('click', function() {
+    bannerID=4
+    change(bannerID)
+    try {
+        clearInterval(banner);
+    } catch (error) {}
+});
+dot5.addEventListener('mouseenter', function() {
+    dot5.classList.add("fa-circle-dot")
+    dot5.classList.remove("fa-circle")
+});
+dot5.addEventListener('mouseleave', function() {
+    if (bannerID != 5){
+        dot5.classList.remove("fa-circle-dot")
+        dot5.classList.add("fa-circle")
+    }
+});
+dot5.addEventListener('click', function() {
+    bannerID=5
+    change(bannerID)
+    try {
+        clearInterval(banner);
+    } catch (error) {}
+});
+dot6.addEventListener('mouseenter', function() {
+    dot6.classList.add("fa-circle-dot")
+    dot6.classList.remove("fa-circle")
+});
+dot6.addEventListener('mouseleave', function() {
+    if (bannerID != 6){
+        dot6.classList.remove("fa-circle-dot")
+        dot6.classList.add("fa-circle")
+    }
+});
+dot6.addEventListener('click', function() {
+    bannerID=6
     change(bannerID)
     try {
         clearInterval(banner);

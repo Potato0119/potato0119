@@ -73,14 +73,21 @@
     <img class="banner" id="banner1" src="./image/banner1.png">
     <img class="banner" id="banner2" src="./image/banner2.png">
     <img class="banner" id="banner3" src="./image/banner3.png">
+    <img class="banner" id="banner4" src="./image/banner4.png">
+    <img class="banner" id="banner5" src="./image/banner5.png">
+    <img class="banner" id="banner6" src="./image/banner6.png">
     <img class="mbanner" src="/image/mbanner.png" />
     <p></p>
     <div class="mainDot">
       <i class="fa-solid fa-circle-dot" id="dot1" style="color: #ffffff;"></i>
       <i class="fa-solid fa-circle" id="dot2" style="color: #ffffff;"></i>
       <i class="fa-solid fa-circle" id="dot3" style="color: #ffffff;"></i>
+      <i class="fa-solid fa-circle" id="dot4" style="color: #ffffff;"></i>
+      <i class="fa-solid fa-circle" id="dot5" style="color: #ffffff;"></i>
+      <i class="fa-solid fa-circle" id="dot6" style="color: #ffffff;"></i>
     </div>
   </div>
+  <a class="clearBtn" onclick="window.location.reload(true)">強制清除快取</a>
   <div class="about" id="about">
     <p class="about-title">關於我</p>
     <p class="about-text">早安 我只是一個普通的高中生 就讀<span>你猜</span>高中<br>我平常的興趣也就是寫寫程式打個遊戲之類的XD<br>除此之外還有一個會讓很多人生氣的事<br>就是我有女朋友 我很幸福:D</p>

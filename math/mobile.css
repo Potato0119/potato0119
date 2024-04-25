@@ -124,23 +124,38 @@
       height: calc((100vw - ((100vh * 730 / 2560) * 0.02 + 4vh)) - 3vh);
       position: absolute;
     }
-    .calculator Div{
+    .calculator div{
       display: flex;
       font-size: 4vh;
       margin-top: 4vh;
       margin-left: 4vh;
     }
-    .calculator Div *{
+    .calculator div *{
       display: flex;
     }
-    .calculator Div input{
+    .calculator div input{
       display: flex;
       height: 4vh;
       font-size: 4vh;
       width: 2em;
     }
-    .calculator Div p{
+    .calculator div p{
       display: flex;
+    }
+    .calculator Div button{
+      position: absolute;
+      top:4.5vh;
+      left:28vh;
+      height: 4vh;
+      text-align: center;
+      background-color: #69d2ff;
+      border: #16b9ff 0.5vh solid;
+      border-radius: 4vh;
+      cursor: pointer;
+    }
+    .calculator Div button p{
+      line-height: 3vh;
+      font-size: 2vh;
     }
     .pDiv input{
       position: absolute;
@@ -165,11 +180,16 @@
       left:11vh;
     }
     #pResult{
+      position: absolute;
+      display: flex;
       top:4vh;
       left:15vh;
       height: 4vh !important;
       font-size: 4vh !important;
       width: 2em;
+    }
+    #pBtn{
+      left:25vh;
     }
     .cDiv input{
       position: absolute;
@@ -194,11 +214,16 @@
       left:11vh;
     }
     #cResult{
+      position: absolute;
+      display: flex;
       top:4vh;
       left:15vh;
       height: 4vh !important;
       font-size: 4vh !important;
       width: 2em;
+    }
+    #cBtn{
+      left:25vh;
     }
     /* content */
 
