@@ -47,7 +47,7 @@
   ?>
   <div class="header" id="header">
     <div class="title" id="title">
-      <img src="/image/icon.png" />
+      <img alt="" src="/image/icon.png" />
       <p><span class="title1">馬鈴薯</span><span class="title2">的個人網站</span></p>
     </div>
     <nav class="nav-pc">
@@ -57,6 +57,7 @@
         <li><a onclick="project()">作品集</a></li>
         <li><a onclick="shop()">客製網站服務</a></li>
         <li><a href="./math/index.html">高一數學計算機</a></li>
+        <li><a href="./resource/index.html">資源下載專區</a></li>
         <li><a href="./blog/index.php">馬鈴薯Blog</a></li>
         <li class="loginli"><a href="./login/index.php"><?php echo $username; ?></a>
         <form method='post' action='<?php echo $_SERVER["PHP_SELF"]; ?>'><ul class='accList'><li><input type='submit' name='logout' value='登出'></p></li></ul></form>
@@ -70,13 +71,13 @@
   </span>
 
   <div class="main">
-    <img class="banner" id="banner1" src="./image/banner1.png">
-    <img class="banner" id="banner2" src="./image/banner2.png">
-    <img class="banner" id="banner3" src="./image/banner3.png">
-    <img class="banner" id="banner4" src="./image/banner4.png">
-    <img class="banner" id="banner5" src="./image/banner5.png">
-    <img class="banner" id="banner6" src="./image/banner6.png">
-    <img class="mbanner" src="/image/mbanner.png" />
+    <img class="banner" id="banner1" alt="" src="./image/banner1.png">
+    <img class="banner" id="banner2" alt="" src="./image/banner2.png">
+    <img class="banner" id="banner3" alt="" src="./image/banner3.png">
+    <img class="banner" id="banner4" alt="" src="./image/banner4.png">
+    <img class="banner" id="banner5" alt="" src="./image/banner5.png">
+    <img class="banner" id="banner6" alt="" src="./image/banner6.png">
+    <img class="mbanner" alt="" src="/image/mbanner.png">
     <p></p>
     <div class="mainDot">
       <i class="fa-solid fa-circle-dot" id="dot1" style="color: #ffffff;"></i>
@@ -93,55 +94,55 @@
     <p class="about-text">早安 我只是一個普通的高中生 就讀<span>你猜</span>高中<br>我平常的興趣也就是寫寫程式打個遊戲之類的XD<br>除此之外還有一個會讓很多人生氣的事<br>就是我有女朋友 我很幸福:D</p>
     <div class="call">
       <p class="call-title">聯繫方式</p>
-      <div class="call-item" onclick="discord()"><img src="/image/discord.png"/><p>Discord</p></div>
-      <a href="https://www.instagram.com/potato_0119_/" target="_blank"><div class="call-item"><img src="/image/ig.png"/><p>Instagram</p></div></a>
-      <a href="https://github.com/Potato0119" target="_blank"><div class="call-item"><img src="/image/github.png"/><p>Github</p></div></a>
+      <div class="call-item" onclick="discord()"><img alt="" src="/image/discord.png"/><p>Discord</p></div>
+      <a href="https://www.instagram.com/potato_0119_/" target="_blank"><div class="call-item"><img alt="" src="/image/ig.png"/><p>Instagram</p></div></a>
+      <a href="https://github.com/Potato0119" target="_blank"><div class="call-item"><img alt="" src="/image/github.png"/><p>Github</p></div></a>
       <div class="call-background"></div>
     </div>
     <div class="skill">
       <p class="skill-title">技能</p>
-      <div class="skill-item"><img src="/image/python.png"/><p>Python</p></div>
-      <div class="skill-item"><img src="/image/html.png"/><p>網站前端</p></div>
-      <div class="skill-item"><img src="/image/ps.png"/><p>基本修圖</p></div>
-      <div class="skill-item"><img src="/image/pr.png"/><p>基本剪輯</p></div>
-      <div class="skill-item"><img src="/image/ae.png"/><p>基本特效</p></div>
+      <div class="skill-item"><img alt="" src="/image/python.png"/><p>Python</p></div>
+      <div class="skill-item"><img alt="" src="/image/html.png"/><p>網站前端</p></div>
+      <div class="skill-item"><img alt="" src="/image/ps.png"/><p>基本修圖</p></div>
+      <div class="skill-item"><img alt="" src="/image/pr.png"/><p>基本剪輯</p></div>
+      <div class="skill-item"><img alt="" src="/image/ae.png"/><p>基本特效</p></div>
       <div class="skill-background"></div>
     </div>
     <div class="mskill1">
       <p class="mskill1-title">技能</p>
-      <div class="mskill1-item"><img src="/image/python.png"/><p>Python</p></div>
-      <div class="mskill1-item"><img src="/image/html.png"/><p>網站前端</p></div>
-      <div class="mskill1-item"><img src="/image/ps.png"/><p>基本修圖</p></div>
+      <div class="mskill1-item"><img alt="" src="/image/python.png"/><p>Python</p></div>
+      <div class="mskill1-item"><img alt="" src="/image/html.png"/><p>網站前端</p></div>
+      <div class="mskill1-item"><img alt="" src="/image/ps.png"/><p>基本修圖</p></div>
       <div class="mskill1-background"></div>
     </div>
     <div class="mskill2">
       <p class="mskill2-title">技能</p>
-      <div class="mskill2-item"><img src="/image/pr.png"/><p>基本剪輯</p></div>
-      <div class="mskill2-item"><img src="/image/ae.png"/><p>基本特效</p></div>
+      <div class="mskill2-item"><img alt="" src="/image/pr.png"/><p>基本剪輯</p></div>
+      <div class="mskill2-item"><img alt="" src="/image/ae.png"/><p>基本特效</p></div>
       <div class="mskill2-background"></div>
     </div>
     <div class="game">
       <p class="game-title">遊戲</p>
-      <div class="game-item"><img src="/image/minecraft.png"/><p>Minecraft</p></div>
-      <div class="game-item"><img src="/image/gtav.png"/><p>GTA V</p></div>
-      <div class="game-item"><img src="/image/fh5.png"/><p>Forza Horizon 5</p></div>
-      <div class="game-item"><img src="/image/mfs2020.png"/><p>MFS 2020</p></div>
-      <div class="game-item"><img src="/image/ron.png"/><p>Ready or Not</p></div>
-      <div class="game-item"><img src="/image/ets2.png"/><p>ETS 2</p></div>
+      <div class="game-item"><img alt="" src="/image/minecraft.png"/><p>Minecraft</p></div>
+      <div class="game-item"><img alt="" src="/image/gtav.png"/><p>GTA V</p></div>
+      <div class="game-item"><img alt="" src="/image/fh5.png"/><p>Forza Horizon 5</p></div>
+      <div class="game-item"><img alt="" src="/image/mfs2020.png"/><p>MFS 2020</p></div>
+      <div class="game-item"><img alt="" src="/image/ron.png"/><p>Ready or Not</p></div>
+      <div class="game-item"><img alt="" src="/image/ets2.png"/><p>ETS 2</p></div>
       <div class="game-background"></div>
     </div>
     <div class="mgame1">
       <p class="mgame1-title">遊戲</p>
-      <div class="mgame1-item"><img src="/image/minecraft.png"/><p>Minecraft</p></div>
-      <div class="mgame1-item"><img src="/image/gtav.png"/><p>GTA V</p></div>
-      <div class="mgame1-item"><img src="/image/fh5.png"/><p>Forza Horizon 5</p></div>
+      <div class="mgame1-item"><img alt="" src="/image/minecraft.png"/><p>Minecraft</p></div>
+      <div class="mgame1-item"><img alt="" src="/image/gtav.png"/><p>GTA V</p></div>
+      <div class="mgame1-item"><img alt="" src="/image/fh5.png"/><p>Forza Horizon 5</p></div>
       <div class="mgame1-background"></div>
     </div>
     <div class="mgame2">
       <p class="mgame2-title">遊戲</p>
-      <div class="mgame2-item"><img src="/image/mfs2020.png"/><p>MFS 2020</p></div>
-      <div class="mgame2-item"><img src="/image/ron.png"/><p>Ready or Not</p></div>
-      <div class="mgame2-item"><img src="/image/ets2.png"/><p>ETS 2</p></div>
+      <div class="mgame2-item"><img alt="" src="/image/mfs2020.png"/><p>MFS 2020</p></div>
+      <div class="mgame2-item"><img alt="" src="/image/ron.png"/><p>Ready or Not</p></div>
+      <div class="mgame2-item"><img alt="" src="/image/ets2.png"/><p>ETS 2</p></div>
       <div class="mgame2-background"></div>
     </div>
   </div>
@@ -150,12 +151,12 @@
       這些是我的作品<br class="rwd">有但不多
     </p>
     <div class="Gblock">
-      <a href="https://reurl.cc/YV9M3X" target="_blank"><div class="block block1"><img src="/image/ts.png" ><p>DC-廢話機器人</p></div></a>
-      <a href="https://reurl.cc/xLK6aE" target="_blank"><div class="block block2"><img src="/image/betBOTato.png" ><p>DC-對賭機器人</p></div></a>
-      <a href="/math/index.html"><div class="block block3"><img src="/image/math.png" ><p>高一數學計算機</p></div></a>
-      <a href="https://www.instagram.com/reel/Cs-57kCOqV2/" target="_blank"><div class="block block4"><img src="/image/media1.png" ><p>IG-小帥的冒險1</p></div></a>
-      <a href="https://www.instagram.com/reel/Cs_a2gZsAYp/" target="_blank"><div class="block block5"><img src="/image/media1.png" ><p>IG-小帥的冒險2</p></div></a>
-      <a href="https://www.instagram.com/reel/CtBE1KsOUOi/" target="_blank"><div class="block block6"><img src="/image/media1.png" ><p>IG-小帥的冒險3</p></div></a>
+      <a href="https://reurl.cc/YV9M3X" target="_blank"><div class="block block1"><img alt="" src="/image/ts.png" ><p>DC-廢話機器人</p></div></a>
+      <a href="https://reurl.cc/xLK6aE" target="_blank"><div class="block block2"><img alt="" src="/image/betBOTato.png" ><p>DC-對賭機器人</p></div></a>
+      <a href="/math/index.html"><div class="block block3"><img alt="" src="/image/math.png" ><p>高一數學計算機</p></div></a>
+      <a href="https://www.instagram.com/reel/Cs-57kCOqV2/" target="_blank"><div class="block block4"><img alt="" src="/image/media1.png" ><p>IG-小帥的冒險1</p></div></a>
+      <a href="https://www.instagram.com/reel/Cs_a2gZsAYp/" target="_blank"><div class="block block5"><img alt="" src="/image/media1.png" ><p>IG-小帥的冒險2</p></div></a>
+      <a href="https://www.instagram.com/reel/CtBE1KsOUOi/" target="_blank"><div class="block block6"><img alt="" src="/image/media1.png" ><p>IG-小帥的冒險3</p></div></a>
     </div>
   </div>
 
@@ -165,21 +166,21 @@
     </p>
     <p class="shop-text">我目前接單網站編寫服務 我只接靜態網頁喔~<br>品質優良 歡迎下單</p>
     <div class="sblock sblock1" id="sblock1">
-      <img src="./image/book.png"/>
+      <img alt="" src="./image/book.png"/>
       <p class="sblock_title">網站編寫</p>
       <p class="sblock_price">私訊談價</p>
       <a onclick="discord()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
       <p class="sblock_sub" id="sub1">不會寫程式嗎?<br>沒關係 只要你有想法<br>都歡迎你下單討論<br>基本費用是600元<br>不過如果沒甚麼特殊的需求<br>可能就剛好600<br>一切以報價為準</p>
     </div>
     <div class="sblock sblock2" id="sblock2">
-      <img src="./image/lever.png"/>
+      <img alt="" src="./image/lever.png"/>
       <p class="sblock_title">網站架設</p>
       <p class="sblock_price">私訊談價</p>
       <a onclick="discord()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
       <p class="sblock_sub" id="sub2">你有一個網站的檔案了<br>但想讓網站出現在網路上?<br>只要你願意下單<br>就幫你架設到網路上<br>還有Google搜尋引擎上喔~</p>
     </div>
     <div class="sblock sblock3" id="sblock3">
-      <img src="./image/iron_golem.png"/>
+      <img alt="" src="./image/iron_golem.png"/>
       <p class="sblock_title">網站維護</p>
       <p class="sblock_price">私訊談價</p>
       <a onclick="discord()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
