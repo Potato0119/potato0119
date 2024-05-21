@@ -7,6 +7,13 @@
   <meta name="description" content="安 我是馬鈴薯！這是我的個人網站 如果有客製網站服務也歡迎找我喔！馬鈴薯的個人網站 Potato0119 PotatoTW" />
   <title>馬鈴薯的個人網站 | Potato0119's Web</title>
 
+  <!-- font and other-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rochester&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet"/>
+
   <!-- CSS -->
   <link rel="stylesheet" href="./reset.css" />
   <link rel="stylesheet" href="./style.css" />
@@ -17,19 +24,11 @@
   <link type="image/x-icon" href="./favicon.ico" rel="bookmark" />
   <link data-default-icon="./favicon.ico" data-badged-icon="./favicon.ico" rel="shortcut icon" href="./favicon.ico"/>
   <link rel="robots" href="./robots.txt" />
-
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://potato0119.com/image/icon.png">
   <meta property="og:title" content="馬鈴薯的個人網站 | Potato0119's Web">
   <meta property="og:description" content="安 我是馬鈴薯！這是我的個人網站 如果有客製網站服務也歡迎找我喔！馬鈴薯的個人網站 Potato0119 PotatoTW">
   <meta property="og:url" content="https://potato0119.com">
-
-  <!-- font and other-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rochester&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet"/>
 </head>
 <body onload="start()">
   <?php
