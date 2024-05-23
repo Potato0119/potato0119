@@ -38,19 +38,6 @@ function start(){
           setTimeout(() => {sub.style = "text-shadow: 0 0 1vw #00c8ff;"}, 500)
         }
       }, 50);
-      setTimeout(() => {
-        const typing = document.querySelector(".main p")
-        j=1
-        var loop2 = setInterval(() => {
-          typing.textContent = str.slice(0,j)
-          j++
-          if (j == str.length+2){
-            clearInterval(loop2)
-            setTimeout(() => {typing.innerHTML = strFinal}, 500)
-            setTimeout(() => {typing.style = "text-shadow: 0 0 1vw #00c8ff;"}, 1000)
-          }
-      }, 50);
-      }, 2000)
     }, 1000)
   }else{
     setTimeout(() => {
@@ -73,25 +60,20 @@ function start(){
           setTimeout(() => {sub.style = "text-shadow: 0 0 1vw #eab532;"}, 500)
         }
       }, 50);
-      setTimeout(() => {
-        const typing = document.querySelector(".main p")
-        j=1
-        var loop2 = setInterval(() => {
-          typing.textContent = str.slice(0,j)
-          j++
-          if (j == str.length+2){
-            clearInterval(loop2)
-            setTimeout(() => {typing.innerHTML = strFinal}, 500)
-            setTimeout(() => {typing.style = "text-shadow: 0 0 1vw #9154d2;"}, 1000)
-          }
-      }, 50);
-      }, 2000)
     }, 2000)
   }
 }
 
 // Discord
 function discord(){
+  Swal.fire({
+    title: '我的Discord',
+    html: "@potato_tw",
+    icon: "info",
+    confirmButtonText: '酷',
+  });
+}
+function contact(){
   Swal.fire({
     title: '我的聯繫方式',
     html: "Instagram: @potato_0119_<br>Discord: @potato_tw",
@@ -187,7 +169,7 @@ if (isMobileDevice()) {
 // header
 function header() {
   if (window.scrollY >= window.innerHeight - ((window.innerWidth * 730 / 2560) * 0.02 + window.innerWidth * 0.04)) {
-    document.getElementById('header').style="background: #5b5b5b67;";
+    document.getElementById('header').style="background: #aaa;";
   }else{
     document.getElementById('header').style="background: transparent;";
   }
@@ -202,20 +184,32 @@ function home(){
 }
 function about(){
   const aboutPage = document.getElementById('about');
-  aboutPage.scrollIntoView({
-    behavior: 'smooth'
+  const rect = aboutPage.getBoundingClientRect();
+  const offset = (window.innerWidth * 730 / 2560) * 0.015 + window.innerWidth * 0.04;
+  const targetY = window.scrollY + rect.top - offset;
+  window.scrollTo({
+      top: targetY,
+      behavior: 'smooth'
   });
 }
 function project(){
   const projectPage = document.getElementById('project');
-  projectPage.scrollIntoView({
-    behavior: 'smooth'
+  const rect = projectPage.getBoundingClientRect();
+  const offset = (window.innerWidth * 730 / 2560) * 0.02 + window.innerWidth * 0.04;
+  const targetY = window.scrollY + rect.top - offset;
+  window.scrollTo({
+      top: targetY,
+      behavior: 'smooth'
   });
 }
 function shop(){
   const shopPage = document.getElementById('shop');
-  shopPage.scrollIntoView({
-    behavior: 'smooth'
+  const rect = shopPage.getBoundingClientRect();
+  const offset = (window.innerWidth * 730 / 2560) * 0.02 + window.innerWidth * 0.04;
+  const targetY = window.scrollY + rect.top - offset;
+  window.scrollTo({
+      top: targetY,
+      behavior: 'smooth'
   });
 }
 function back(){

@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rochester&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet"/>
+  <link href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" rel="stylesheet"/>
 
   <!-- CSS -->
   <link rel="stylesheet" href="./reset.css" />
@@ -77,7 +77,6 @@
     <img class="banner" id="banner5" alt="" src="./image/banner5.png">
     <img class="banner" id="banner6" alt="" src="./image/banner6.png">
     <img class="mbanner" alt="" src="/image/mbanner.png">
-    <p></p>
     <div class="mainDot">
       <i class="fa-solid fa-circle-dot" id="dot1" style="color: #ffffff;"></i>
       <i class="fa-solid fa-circle" id="dot2" style="color: #ffffff;"></i>
@@ -90,7 +89,7 @@
   <a class="clearBtn" onclick="window.location.reload(true)">強制清除快取</a>
   <div class="about" id="about">
     <p class="about-title">關於我</p>
-    <p class="about-text">早安 我只是一個普通的高中生 就讀<span>你猜</span>高中<br>我平常的興趣也就是寫寫程式打個遊戲之類的XD<br>除此之外還有一個會讓很多人生氣的事<br>就是我有女朋友 我很幸福:D</p>
+    <p class="about-text">嗨 很高興認識你 我叫馬鈴薯 英文是Potato0119<br>你可以叫我馬鈴薯 或 破鐵頭 或 Potato 就讀<span>你猜</span>高中<br>我平常的興趣也就是寫寫程式打個遊戲之類的XD<br>如果有靜態網站設計的需求可以找我(請往下滑)</p>
     <div class="call">
       <p class="call-title">聯繫方式</p>
       <div class="call-item" onclick="discord()"><img alt="" src="/image/discord.png"/><p>Discord</p></div>
@@ -168,28 +167,28 @@
       <img alt="" src="./image/book.png"/>
       <p class="sblock_title">網站編寫</p>
       <p class="sblock_price">私訊談價</p>
-      <a onclick="discord()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
+      <a onclick="contact()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
       <p class="sblock_sub" id="sub1">不會寫程式嗎?<br>沒關係 只要你有想法<br>都歡迎你下單討論<br>基本費用是600元<br>不過如果沒甚麼特殊的需求<br>可能就剛好600<br>一切以報價為準</p>
     </div>
     <div class="sblock sblock2" id="sblock2">
       <img alt="" src="./image/lever.png"/>
       <p class="sblock_title">網站架設</p>
       <p class="sblock_price">私訊談價</p>
-      <a onclick="discord()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
+      <a onclick="contact()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
       <p class="sblock_sub" id="sub2">你有一個網站的檔案了<br>但想讓網站出現在網路上?<br>只要你願意下單<br>就幫你架設到網路上<br>還有Google搜尋引擎上喔~</p>
     </div>
     <div class="sblock sblock3" id="sblock3">
       <img alt="" src="./image/iron_golem.png"/>
       <p class="sblock_title">網站維護</p>
       <p class="sblock_price">私訊談價</p>
-      <a onclick="discord()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
+      <a onclick="contact()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
       <p class="sblock_sub" id="sub3">網站寫好了也架設好了<br>但有時需要更新?<br>現在只需要300$月<br>就可以依照你的想法<br>幫你進行網站更新</p>
     </div>
     <div class="sblock sblock4" id="sblock4">
       <img src="./image/emerald.png"/>
       <p class="sblock_title">套餐: 編寫+架設</p>
       <p class="sblock_price">編寫+架設的價格打8折!!</p>
-      <a onclick="discord()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
+      <a onclick="contact()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
       <p class="sblock_sub" id="sub4">網站編寫跟架設一氣呵成?<br>就是這裡了 下單此項目<br>立即享受八折優惠!!</p>
     </div>
   </div>

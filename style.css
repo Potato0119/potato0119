@@ -65,7 +65,8 @@ body {
 .nav-pc {
   display: block;
   position: absolute;
-  top: calc((100vw * 730 / 2560) * 0.01 + 1vw);
+  top: calc((100vw * 730 / 2560) * 0.01 + 2vw);
+  transform: translate(0%,-50%);
   right: 0;
   z-index: 2;
 }
@@ -88,7 +89,7 @@ body {
 .nav-pc ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 1.2vw;
   cursor: pointer;
 }
 .nav-pc ul li a::after {
@@ -139,18 +140,6 @@ body {
   top: 0;
   z-index: 1;
   overflow: hidden;
-}
-.main p{
-  position: absolute;
-  transform: translate(-50%,0%);
-  bottom: 6%;
-  left: 50%;
-  text-align: center;
-  color: #fff;
-  font-size: 2vw;
-  line-height: 3vw;
-  transition: text-shadow 200ms ease-in-out;
-  z-index: 2;
 }
 .banner {
   width: 100vw;
@@ -218,8 +207,9 @@ body {
 }
 .about-text{
   text-align: center;
-  margin-top: 5vw;
+  margin-top: 3.5vw;
   font-size: 1.5vw;
+  line-height: 2vw;
 }
 .about-text span{
   text-decoration: line-through 0.1em #000 solid;
@@ -231,6 +221,7 @@ body {
   transform: translate(-100%,2%);
   width: 2em;
   height: 1em;
+  margin-top: 0.25vw;
   transition: background 500ms;
 
 }

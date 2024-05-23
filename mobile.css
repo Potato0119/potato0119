@@ -76,16 +76,6 @@
       top:0%;
       background-color: transparent;
     }
-    .main p{
-      position: absolute;
-      transform: translate(-50%,-50%);
-      top: 60%;
-      left: 50%;
-      text-align: center;
-      font-size: 5vw;
-      line-height: 10vw;
-      width: 17em;
-    }
     /* 第一塊 */
 
     /* 第二塊 */
@@ -108,11 +98,13 @@
     }
     .about-text{
       text-align: center;
-      margin-top: 8vh;
+      margin-top: 6vh;
       font-size: 2vh;
+      line-height: 2.5vh;
     }
     .about-text span{
       text-decoration: line-through 0.1em #000 solid;
+      margin-top: 0.25vh;
     }
     .about-text span::after{
       content: "";
