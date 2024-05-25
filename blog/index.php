@@ -19,8 +19,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet"/>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rochester&display=swap" rel="stylesheet">
+  <link href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" rel="stylesheet"/>
 </head>
 <body>
     <img class="bg" src="./../image/bg.png"/>
@@ -41,6 +41,23 @@
           </nav>
         </div>
     </form>
+    <!-- 手機選單 -->
+    <i class="list fa-solid fa-list" id="list"></i>
+    <div class="exit-menu" id="exit-menu"></div>
+    <div class="menu" id="menu">
+      <img src="../image/icon.png" alt="icon">
+      <p class="menu-title">Potato0119's Web</p>
+      <hr width="100%" style="height: 0.25vh;border-width:0;background-color:gray">
+      <nav>
+        <div><a href="../index.php">首頁</a></div>
+        <div><a href="../math/index.html">高一數學計算機</a></div>
+        <div><a href="../resource/index.html">資源下載專區</a></div>
+        <div><a href="./index.html">馬鈴薯Blog</a></div>
+        <div><a href="../login/index.php">註冊登入系統</a></div>
+      </nav>
+    </div>
+    <!-- 手機選單 -->
+    <script src="../menu.js"></script>
     <?php
       $SQLservername = "localhost";
       $SQLusername = "root";

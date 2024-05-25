@@ -56,6 +56,7 @@
         <li><a onclick="project()">作品集</a></li>
         <li><a onclick="shop()">客製網站服務</a></li>
         <li><a href="./math/index.html">高一數學計算機</a></li>
+        <br class="rwd">
         <li><a href="./resource/index.html">資源下載專區</a></li>
         <li><a href="./blog/index.php">馬鈴薯Blog</a></li>
         <li class="loginli"><a href="./login/index.php"><?php echo $username; ?></a>

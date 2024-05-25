@@ -62,10 +62,37 @@
     .nav-pc ul li a {
       text-decoration: none;
       color: #fff;
-      font-size: 3.5vw;
+      font-size: 3.4vw;
     }
     .nav-pc ul li a:hover::after {
       width: 0%;
+    }
+    .loginli{
+      position: relative;
+    }
+    .accList{
+      position: absolute;
+      background-color: #e4e4e4;
+      border-radius: 3px;
+      width: 144px;
+      padding-top: 0px;
+      opacity: 0;
+      transition: opacity 200ms ease-in-out;
+      transform: translate(-50%,0);
+      left: 50%;
+    }
+    .loginli:hover .accList{
+      opacity: 1;
+    }
+    .accList li{
+      margin-top: 10px;
+    }
+    .accList li input{
+      border: none;
+      background-color: #e4e4e4;
+      font-size: 24px;
+      cursor:pointer;
+      font-weight: bold;
     }
     .main {
       position: absolute;
@@ -83,7 +110,7 @@
       width: 100vw;
       height: 100vh;
       position: absolute;
-      top: 100vh;
+      top: calc(100vw * 730 / 1440);
       left: 0vw;
     }
     .about-title {
@@ -395,7 +422,7 @@
       width: 100vw;
       height: 100vh;
       position: absolute;
-      top: 200vh;
+      top: calc(100vh + (100vw * 730 / 1440));
       left: 0vw;
     }
     .project-title {
@@ -492,7 +519,7 @@
       width: 100vw;
       height: 100vh;
       position: absolute;
-      top: 300vh;
+      top: calc(200vh + (100vw * 730 / 1440));
       left: 0vw;
     }
     .shop-title {
@@ -636,7 +663,7 @@
       width: 100vw;
       height: 10vh;
       position: absolute;
-      top: 400vh;
+      top: calc(300vh + (100vw * 730 / 1440));
       left: 0vw;
     }
     .footer div{

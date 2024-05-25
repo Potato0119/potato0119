@@ -35,7 +35,7 @@ function start(){
         i++
         if (i == potato.length+2){
           clearInterval(loop1)
-          setTimeout(() => {sub.style = "text-shadow: 0 0 1vw #00c8ff;"}, 500)
+          setTimeout(() => {sub.style = "text-shadow: 0 0 1vw #eab532;"}, 500)
         }
       }, 50);
     }, 1000)
