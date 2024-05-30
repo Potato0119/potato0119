@@ -185,10 +185,11 @@ body {
   height: calc(100vw/16*9);
   transition: left 300ms ease-in-out;
   position: absolute;
-  left: 100vw;
+  left: 150vw;
+  transform: translate(-50%,0);
 }
 #banner1{
-    left: 0vw;
+    left: 50vw;
 }
 .mainDot{
     position: absolute;

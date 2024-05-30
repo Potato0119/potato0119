@@ -14,9 +14,9 @@ function change(time){
         newBanner.style.zIndex="1";
         oldBanner.style.zIndex="0";
         setTimeout(() => {
-            oldBanner.style.left="100vw";
+            oldBanner.style.left="150vw";
         }, 300);
-        newBanner.style.left="0vw";
+        newBanner.style.left="50vw";
         nextID = time
     }
 }
@@ -36,9 +36,9 @@ const banner = setInterval(() => {
     newBanner.style.zIndex="1";
     oldBanner.style.zIndex="0";
     setTimeout(() => {
-        oldBanner.style.left="100vw";
+        oldBanner.style.left="150vw";
     }, 300);
-    newBanner.style.left="0vw";
+    newBanner.style.left="50vw";
     bannerID = nextID
 }, 3000)
 

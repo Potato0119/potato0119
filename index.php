@@ -54,7 +54,7 @@
   ?>
   <div class="header" id="header">
     <div class="title" id="title">
-      <img alt="" src="/image/icon.png" />
+      <img alt="icon" src="/image/icon.png" />
       <p><span class="title1">馬鈴薯</span><span class="title2">的個人網站</span></p>
     </div>
     <nav class="nav-pc">

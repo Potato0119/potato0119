@@ -19,6 +19,11 @@ function isMobileDevice() {
 // 起始動畫
 const potato = "Potato0119's Web"
 function start(){
+  // 執行 banner.js
+  var script = document.createElement('script');
+  script.src = './banner.js';
+  document.body.appendChild(script);
+  // 結束
   if (isMobileDevice()) {
     setTimeout(() => {
       if (window.scrollY <= window.innerHeight){
