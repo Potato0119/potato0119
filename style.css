@@ -11,6 +11,45 @@ body {
 }
 /* body */
 
+/* Loading */
+.loading{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 11;
+  transition: opacity 500ms ease-in-out;
+}
+.loading img{
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  transform: translate(-50%,0%);
+  bottom:55%;
+  left:50%;
+}
+@keyframes roll {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+.loading div{
+  font-size: 8vw;
+  position: absolute;
+  /* transform: translate(-50%,-50%); */
+  top:55%;
+  left:46%;
+  animation: roll 2s linear infinite;
+  transition: opacity 500ms ease-in-out;
+}
+.loading p{
+  font-size: 2vw;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:80%;
+  left:50%;
+}
+/* Loading */
+
 /* header */
 .header{
   transition: background 200ms ease-in-out;

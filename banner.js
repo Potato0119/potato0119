@@ -1,5 +1,5 @@
 var bannerID = 1
-var maxID = 6
+var maxID = 7
 var nextID = 0
 function change(time){
     if (time!=nextID){
@@ -22,7 +22,7 @@ function change(time){
 }
 const banner = setInterval(() => {
     nextID = bannerID + 1
-    if (nextID > 6){
+    if (nextID > 7){
         nextID = 1
     }
     oldBanner = document.getElementById("banner"+bannerID.toString())
@@ -48,6 +48,7 @@ dot3 = document.getElementById("dot3")
 dot4 = document.getElementById("dot4")
 dot5 = document.getElementById("dot5")
 dot6 = document.getElementById("dot6")
+dot7 = document.getElementById("dot7")
 
 dot1.addEventListener('mouseenter', function() {
     dot1.classList.add("fa-circle-dot")
@@ -146,6 +147,23 @@ dot6.addEventListener('mouseleave', function() {
 });
 dot6.addEventListener('click', function() {
     bannerID=6
+    change(bannerID)
+    try {
+        clearInterval(banner);
+    } catch (error) {}
+});
+dot7.addEventListener('mouseenter', function() {
+    dot7.classList.add("fa-circle-dot")
+    dot7.classList.remove("fa-circle")
+});
+dot7.addEventListener('mouseleave', function() {
+    if (bannerID != 7){
+        dot7.classList.remove("fa-circle-dot")
+        dot7.classList.add("fa-circle")
+    }
+});
+dot7.addEventListener('click', function() {
+    bannerID=7
     change(bannerID)
     try {
         clearInterval(banner);

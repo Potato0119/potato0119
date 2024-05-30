@@ -17,8 +17,6 @@ function isMobileDevice() {
 }
 
 // 起始動畫
-const str = "<p>嗨 很高興認識你<br>我叫馬鈴薯 英文是Potato0119<br>你可以叫我馬鈴薯 或 破鐵頭 或 Potato<br>如果有靜態網站設計的需求可以找我<br>從編寫程式到網站架設幫您一條龍服務</p>"
-const strFinal = "嗨 很高興認識你<br>我叫馬鈴薯 英文是Potato0119<br>你可以叫我馬鈴薯 或 破鐵頭 或 Potato<br>如果有靜態網站設計的需求可以找我<br>從編寫程式到網站架設幫您一條龍服務"
 const potato = "Potato0119's Web"
 function start(){
   if (isMobileDevice()) {
@@ -45,6 +43,12 @@ function start(){
           back()
       }
     }, 1)
+    document.getElementById('banner2').src = "./image/banner2.png";
+    document.getElementById('banner3').src = "./image/banner3.png";
+    document.getElementById('banner4').src = "./image/banner4.png";
+    document.getElementById('banner5').src = "./image/banner5.png";
+    document.getElementById('banner6').src = "./image/banner6.png";
+    document.getElementById('banner7').src = "./image/banner7.png";
     setTimeout(() => {
       document.querySelector(".title1").style = "color: #eab532;"
       document.querySelector(".title2").style = "color: #9154d2;"
@@ -63,7 +67,16 @@ function start(){
     }, 2000)
   }
 }
-
+function onload(){
+  document.getElementById("loading").style.opacity = "0";
+  document.getElementById("loadingimg").style.opacity = "0";
+  document.getElementById("loadingdiv").style.opacity = "0";
+  document.getElementById("loadingp").style.opacity = "0";
+  setTimeout(() => {
+    document.getElementById("loading").style.display = "none";
+    start()
+  }, 500)
+}
 // Discord
 function discord(){
   Swal.fire({

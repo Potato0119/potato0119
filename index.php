@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./reset.css" />
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./mobile.css" />
+  <link rel="preload" href="./image/icon.png" as="image"/>
 
   <!-- icon, robots og-->
   <link type="image/x-icon" href="./favicon.ico" rel="icon" />
@@ -30,7 +31,14 @@
   <meta property="og:description" content="安 我是馬鈴薯！這是我的個人網站 如果有客製網站服務也歡迎找我喔！馬鈴薯的個人網站 Potato0119 PotatoTW">
   <meta property="og:url" content="https://potato0119.com">
 </head>
-<body onload="start()">
+<body onload="onload()">
+  <div class="loading" id="loading">
+    <img src="./image/icon.png" alt="" id="loadingimg"/>
+    <div id="loadingdiv">
+      <i class="fa-duotone fa-spinner"></i>
+    </div>
+    <p id="loadingp">載入中...</p>
+  </div>
   <?php
     session_start();
     if(isset($_SESSION['username'])) {
@@ -72,11 +80,12 @@
 
   <div class="main">
     <img class="banner" id="banner1" alt="" src="./image/banner1.png">
-    <img class="banner" id="banner2" alt="" src="./image/banner2.png">
-    <img class="banner" id="banner3" alt="" src="./image/banner3.png">
-    <img class="banner" id="banner4" alt="" src="./image/banner4.png">
-    <img class="banner" id="banner5" alt="" src="./image/banner5.png">
-    <img class="banner" id="banner6" alt="" src="./image/banner6.png">
+    <img class="banner" id="banner2" alt="" src="">
+    <img class="banner" id="banner3" alt="" src="">
+    <img class="banner" id="banner4" alt="" src="">
+    <img class="banner" id="banner5" alt="" src="">
+    <img class="banner" id="banner6" alt="" src="">
+    <img class="banner" id="banner7" alt="" src="">
     <img class="mbanner" alt="" src="/image/mbanner.png">
     <div class="mainDot">
       <i class="fa-solid fa-circle-dot" id="dot1" style="color: #ffffff;"></i>
@@ -85,6 +94,7 @@
       <i class="fa-solid fa-circle" id="dot4" style="color: #ffffff;"></i>
       <i class="fa-solid fa-circle" id="dot5" style="color: #ffffff;"></i>
       <i class="fa-solid fa-circle" id="dot6" style="color: #ffffff;"></i>
+      <i class="fa-solid fa-circle" id="dot7" style="color: #ffffff;"></i>
     </div>
   </div>
   <a class="clearBtn" onclick="window.location.reload(true)">強制清除快取</a>
