@@ -515,14 +515,14 @@
     /* 第三塊 */
 
     /* 第四塊 */
-    .shop {
+    .partner {
       width: 100vw;
       height: 100vh;
       position: absolute;
       top: calc(200vh + (100vw * 730 / 1440));
       left: 0vw;
     }
-    .shop-title {
+    .partner-title {
       font-size: 5vh;
       display: flex;
       color: #000;
@@ -531,130 +531,12 @@
       top:1vh;
       left:50%;
       font-weight: bold;
-      width: 6em;
+      width: 5em;
     }
-    .shop-text{
-      text-align: center;
-      margin-top: 8vh;
-      font-size: 2vh;
-    }
-    .sblock{
-      width: 14vh;
-      height: calc((14vh * 600 / 500) + 4vh); /* hover -> 40vh */
-      background-color: #eeeeee;
-      border: 0 #000 solid;
-      border-radius: 1vh;
-      transition: height 1000ms ease-in-out;
-      overflow: hidden;
-    }
-    #sblock1:hover{
-      box-shadow: 0 0 3vh #75321d;
-    }
-    #sblock2:hover{
-      box-shadow: 0 0 3vh #464647;
-    }
-    #sblock3:hover{
-      box-shadow: 0 0 3vh #fefefe;
-    }
-    #sblock4:hover{
-      animation: sblock4 5000ms infinite;
-    }
-    .sblock img{
-      width: 10vh;
-      height: 10vh;
-      position: absolute;
-      transform: translate(-50%,0);
-      top:1vh;
-      left:50%;
-    }
-    .sblock_title{
-      position: absolute;
-      transform: translate(-50%,0);
-      top:13vh;
-      left:50%;
-      font-size: 1.5vh;
-      width: 14vh;
-      text-align: center;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .sblock_price{
-      position: absolute;
-      transform: translate(-50%,0);
-      top:15vh;
-      left:50%;
-      font-size: 1vh;
-      width: 12vh;
-      text-align: center;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .sblock a{
-      position: absolute;
-      transform: translate(-50%,0);
-      top:17vh;
-      left:50%;
-      height:2vh;
-      width: 8vh;
-      background-color: #ffe14a;
-      transition: background-color 200ms ease-in-out;
-      border: 0.15vh #000 solid;
-      border-radius: 1vh;
-      cursor: pointer;
-    }
-    .sblock a:hover{
-      background-color: #8bc9ff;
-    }
-    .sblock a p{
-      position: absolute;
-      transform: translate(-50%,-50%);
-      top:50%;
-      left:50%;
-      color:#000;
-      font-size: 1vh;
-      font-weight: bold;
-      width: 100%;
-      text-align: center;
-    }
-    .sblock_sub{
-      position: absolute;
-      transform: translate(-50%,0);
-      top:20vh;
-      left:50%;
-      font-size: 1vh;
-      width: 12vh;
-      text-align: center;
-      color: #000;
-      text-decoration: none;
-      line-height: 1.5vh;
-      opacity: 0;
-      transition: opacity 1000ms ease-in-out;
-    }
-    .sblock1{
-      position: absolute;
-      transform: translate(-50%,-50%);
-      top: 35%;
-      left:calc(50% - 9vh);
-    }
-    .sblock2{
-      position: absolute;
-      transform: translate(-50%,-50%);
-      top: 35%;
-      left:calc(50% + 9vh);
-    }
-    .sblock3{
-      position: absolute;
-      transform: translate(-50%,-50%);
-      top: 65%;
-      left:calc(50% - 9vh);
-    }
-    .sblock4{
-      position: absolute;
-      transform: translate(-50%,-50%);
-      top: 65%;
-      left:calc(50% + 9vh);
+    .PblockGroup{
+      position: relative;
+      top:9vh;
+      left:10vw;
     }
     /* 第四塊 */
 

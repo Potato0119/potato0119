@@ -62,7 +62,7 @@
         <li><a onclick="home()">首頁</a></li>
         <li><a onclick="about()">關於我</a></li>
         <li><a onclick="project()">作品集</a></li>
-        <li><a onclick="shop()">客製網站服務</a></li>
+        <li><a onclick="partner()">我的朋友們</a></li>
         <li><a href="./math/index.html">高一數學計算機</a></li>
         <br class="rwd">
         <li><a href="./resource/index.html">資源下載專區</a></li>
@@ -169,38 +169,59 @@
     </div>
   </div>
 
-  <div class="shop" id="shop">
-    <p class="shop-title">
-      客製網站服務
+  <div class="partner" id="partner">
+    <p class="partner-title">
+      我的朋友們
     </p>
-    <p class="shop-text">我目前接單網站編寫服務 我只接靜態網頁喔~<br>品質優良 歡迎下單</p>
-    <div class="sblock sblock1" id="sblock1">
-      <img alt="" src="./image/book.png"/>
-      <p class="sblock_title">網站編寫</p>
-      <p class="sblock_price">私訊談價</p>
-      <a onclick="contact()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
-      <p class="sblock_sub" id="sub1">不會寫程式嗎?<br>沒關係 只要你有想法<br>都歡迎你下單討論<br>基本費用是600元<br>不過如果沒甚麼特殊的需求<br>可能就剛好600<br>一切以報價為準</p>
-    </div>
-    <div class="sblock sblock2" id="sblock2">
-      <img alt="" src="./image/lever.png"/>
-      <p class="sblock_title">網站架設</p>
-      <p class="sblock_price">私訊談價</p>
-      <a onclick="contact()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
-      <p class="sblock_sub" id="sub2">你有一個網站的檔案了<br>但想讓網站出現在網路上?<br>只要你願意下單<br>就幫你架設到網路上<br>還有Google搜尋引擎上喔~</p>
-    </div>
-    <div class="sblock sblock3" id="sblock3">
-      <img alt="" src="./image/iron_golem.png"/>
-      <p class="sblock_title">網站維護</p>
-      <p class="sblock_price">私訊談價</p>
-      <a onclick="contact()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
-      <p class="sblock_sub" id="sub3">網站寫好了也架設好了<br>但有時需要更新?<br>現在只需要300$月<br>就可以依照你的想法<br>幫你進行網站更新</p>
-    </div>
-    <div class="sblock sblock4" id="sblock4">
-      <img src="./image/emerald.png"/>
-      <p class="sblock_title">套餐: 編寫+架設</p>
-      <p class="sblock_price">編寫+架設的價格打8折!!</p>
-      <a onclick="contact()"><p><i class="fa-solid fa-cart-shopping"></i> 私訊IG or DC</p></a>
-      <p class="sblock_sub" id="sub4">網站編寫跟架設一氣呵成?<br>就是這裡了 下單此項目<br>立即享受八折優惠!!</p>
+    <div class="PblockGroup">
+      <div class="Pblock">
+        <a href="https://maple.potato0119.com" target="_blank">
+          <img src="/image/maple.jpg" alt="maple">
+          <p>Maple Leaf</p>
+        </a>
+      </div>
+      <div class="Pblock">
+        <a href="https://u7.potato0119.com" target="_blank">
+          <img src="/image/u7.jpg" alt="u7">
+          <p>u7</p>
+        </a>        
+      </div>
+      <div class="Pblock">
+        <a href="https://jimmy.potato0119.com" target="_blank">
+          <img src="/image/jimmy.jpg" alt="jimmy">
+          <p>jimmy</p>
+        </a>
+      </div>
+      <div class="Pblock">
+        <a href="#here">
+          <img src="/image/question-solid.svg" alt="who">
+          <p>誠徵朋友</p>
+        </a>
+      </div>
+      <div class="Pblock">
+        <a href="#here">
+          <img src="/image/question-solid.svg" alt="who">
+          <p>誠徵朋友</p>
+        </a>
+      </div>
+      <div class="Pblock">
+        <a href="#here">
+          <img src="/image/question-solid.svg" alt="who">
+          <p>誠徵朋友</p>
+        </a>
+      </div>
+      <div class="Pblock">
+        <a href="#here">
+          <img src="/image/question-solid.svg" alt="who">
+          <p>誠徵朋友</p>
+        </a>
+      </div>
+      <div class="Pblock">
+        <a href="#here">
+          <img src="/image/question-solid.svg" alt="who">
+          <p>誠徵朋友</p>
+        </a>
+      </div>
     </div>
   </div>
 
@@ -209,7 +230,6 @@
   </div>
 
   <script src="./script.js"></script>
-  <script src="./banner.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

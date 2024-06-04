@@ -535,14 +535,14 @@ body {
 /* project */
 
 /* shop */
-.shop {
+.partner {
   width: 100vw;
   height: 100vh;
   position: absolute;
   top: 300vh;
   left: 0vw;
 }
-.shop-title {
+.partner-title {
   font-size: 2vw;
   display: flex;
   color: #000;
@@ -551,140 +551,44 @@ body {
   top:1vw;
   left:50%;
   font-weight: bold;
-}
-.shop-text{
   text-align: center;
-  margin-top: 5vw;
-  font-size: 1.5vw;
 }
-.sblock{
-  width: 14vw;
-  height: calc((14vw * 600 / 500) + 4vw); /* hover -> 40vw */
-  background-color: #eeeeee;
-  border: 0 #000 solid;
+.PblockGroup{
+  width: 80vw;
+  height: auto;
+  position: relative;
+  top:calc(3vw + 3vh);
+  left:10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.PblockGroup div {
+  width: 20%;
+  height: 20vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  min-width: 100px;
+}
+.PblockGroup a {
+  text-decoration: none;
+}
+.PblockGroup div a img{
+  width: 16vw;
+  height: 16vw;
+  flex-grow: 0;
   border-radius: 1vw;
-  transition: height 1000ms ease-in-out;
-  overflow: hidden;
-}
-#sblock1:hover{
-  box-shadow: 0 0 3vw #75321d;
-}
-#sblock2:hover{
-  box-shadow: 0 0 3vw #464647;
-}
-#sblock3:hover{
-  box-shadow: 0 0 3vw #fefefe;
-}
-@keyframes sblock4{
-  0%{box-shadow: 0 0 3vw #f79533}
-  12.5%{box-shadow: 0 0 3vw #f37055}
-  25%{box-shadow: 0 0 3vw #ef4e7b}
-  37.5%{box-shadow: 0 0 3vw #a166ab}
-  50%{box-shadow: 0 0 3vw #5073b8}
-  62.5%{box-shadow: 0 0 3vw #1098ad}
-  75%{box-shadow: 0 0 3vw #07b39b}
-  87.5%{box-shadow: 0 0 3vw #6fba82}
-  100%{box-shadow: 0 0 3vw #f79533}
-}
-#sblock4:hover{
-  animation: sblock4 5000ms infinite;
-}
-.sblock img{
-  width: 10vw;
-  height: 10vw;
-  position: absolute;
+  display: block;
+  position: relative;
   transform: translate(-50%,0);
-  top:1vw;
   left:50%;
 }
-.sblock_title{
-  position: absolute;
-  transform: translate(-50%,0);
-  top:13vw;
-  left:50%;
-  font-size: 1.5vw;
-  width: 14vw;
+.PblockGroup div a p{
+  margin-top: 0.5vw;
+  font-size: 2vw;
   text-align: center;
   color: #000;
   text-decoration: none;
-  font-weight: bold;
-}
-.sblock_price{
-  position: absolute;
-  transform: translate(-50%,0);
-  top:15vw;
-  left:50%;
-  font-size: 1vw;
-  width: 12vw;
-  text-align: center;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-}
-.sblock a{
-  position: absolute;
-  transform: translate(-50%,0);
-  top:17vw;
-  left:50%;
-  height:2vw;
-  width: 8vw;
-  background-color: #ffe14a;
-  transition: background-color 200ms ease-in-out;
-  border: 0.15vw #000 solid;
-  border-radius: 1vw;
-  cursor: pointer;
-}
-.sblock a:hover{
-  background-color: #8bc9ff;
-}
-.sblock a p{
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top:50%;
-  left:50%;
-  color:#000;
-  font-size: 1vw;
-  font-weight: bold;
-  width: 100%;
-  text-align: center;
-}
-.sblock_sub{
-  position: absolute;
-  transform: translate(-50%,0);
-  top:20vw;
-  left:50%;
-  font-size: 1vw;
-  width: 12vw;
-  text-align: center;
-  color: #000;
-  text-decoration: none;
-  line-height: 1.5vw;
-  opacity: 0;
-  transition: opacity 1000ms ease-in-out;
-}
-.sblock1{
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 50%;
-  left:calc(50% - 27vw);
-}
-.sblock2{
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 50%;
-  left:calc(50% - 9vw);
-}
-.sblock3{
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 50%;
-  left:calc(50% + 9vw);
-}
-.sblock4{
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 50%;
-  left:calc(50% + 27vw);
 }
 /* shop */
 

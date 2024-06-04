@@ -20,9 +20,9 @@ function isMobileDevice() {
 const potato = "Potato0119's Web"
 function start(){
   // 執行 banner.js
-  var script = document.createElement('script');
-  script.src = './banner.js';
-  document.body.appendChild(script);
+  var bannerScript = document.createElement('script');
+  bannerScript.src = './banner.js';
+  document.body.appendChild(bannerScript);
   // 結束
   if (isMobileDevice()) {
     setTimeout(() => {
@@ -30,6 +30,12 @@ function start(){
           back()
       }
     }, 1)
+    document.getElementById('banner2').src = "./image/banner2.png";
+    document.getElementById('banner3').src = "./image/banner3.png";
+    document.getElementById('banner4').src = "./image/banner4.png";
+    document.getElementById('banner5').src = "./image/banner5.png";
+    document.getElementById('banner6').src = "./image/banner6.png";
+    document.getElementById('banner7').src = "./image/banner7.png";
     setTimeout(() => {
       const sub = document.querySelector(".sub1")
       i=1
@@ -100,90 +106,6 @@ function contact(){
   });
 }
 
-// Shop
-const sblock1  = document.getElementById('sblock1');
-const sub1 = document.getElementById('sub1');
-const sblock2  = document.getElementById('sblock2');
-const sub2 = document.getElementById('sub2');
-const sblock3  = document.getElementById('sblock3');
-const sub3 = document.getElementById('sub3');
-const sblock4 = document.getElementById('sblock4');
-const sub4 = document.getElementById('sub4');
-
-if (isMobileDevice()) {
-  sblock1.addEventListener('mouseenter', function() {
-    sblock1.style.height="31vh";
-    sub1.style.opacity="1"
-  });
-  sblock1.addEventListener('mouseleave', function() {
-    sblock1.style.height="calc((14vh * 600 / 500) + 4vh)";
-    sub1.style.opacity="0"
-  });
-
-  sblock2.addEventListener('mouseenter', function() {
-    sblock2.style.height="28vh";
-    sub2.style.opacity="1"
-  });
-  sblock2.addEventListener('mouseleave', function() {
-    sblock2.style.height="calc((14vh * 600 / 500) + 4vh)";
-    sub2.style.opacity="0"
-  });
-
-  sblock3.addEventListener('mouseenter', function() {
-    sblock3.style.height="28vh";
-    sub3.style.opacity="1"
-  });
-  sblock3.addEventListener('mouseleave', function() {
-    sblock3.style.height="calc((14vh * 600 / 500) + 4vh)";
-    sub3.style.opacity="0"
-  });
-
-  sblock4.addEventListener('mouseenter', function() {
-    sblock4.style.height="24.5vh";
-    sub4.style.opacity="1"
-  });
-  sblock4.addEventListener('mouseleave', function() {
-    sblock4.style.height="calc((14vh * 600 / 500) + 4vh)";
-    sub4.style.opacity="0"
-  });
-}else{
-  sblock1.addEventListener('mouseenter', function() {
-    sblock1.style.height="31vw";
-    sub1.style.opacity="1"
-  });
-  sblock1.addEventListener('mouseleave', function() {
-    sblock1.style.height="calc((14vw * 600 / 500) + 4vw)";
-    sub1.style.opacity="0"
-  });
-
-  sblock2.addEventListener('mouseenter', function() {
-    sblock2.style.height="28vw";
-    sub2.style.opacity="1"
-  });
-  sblock2.addEventListener('mouseleave', function() {
-    sblock2.style.height="calc((14vw * 600 / 500) + 4vw)";
-    sub2.style.opacity="0"
-  });
-
-  sblock3.addEventListener('mouseenter', function() {
-    sblock3.style.height="28vw";
-    sub3.style.opacity="1"
-  });
-  sblock3.addEventListener('mouseleave', function() {
-    sblock3.style.height="calc((14vw * 600 / 500) + 4vw)";
-    sub3.style.opacity="0"
-  });
-
-  sblock4.addEventListener('mouseenter', function() {
-    sblock4.style.height="24.5vw";
-    sub4.style.opacity="1"
-  });
-  sblock4.addEventListener('mouseleave', function() {
-    sblock4.style.height="calc((14vw * 600 / 500) + 4vw)";
-    sub4.style.opacity="0"
-  });
-}
-
 // header
 function header() {
   if (window.scrollY >= window.innerHeight - ((window.innerWidth * 730 / 2560) * 0.02 + window.innerWidth * 0.04)) {
@@ -220,8 +142,8 @@ function project(){
       behavior: 'smooth'
   });
 }
-function shop(){
-  const shopPage = document.getElementById('shop');
+function partner(){
+  const shopPage = document.getElementById('partner');
   const rect = shopPage.getBoundingClientRect();
   const offset = (window.innerWidth * 730 / 2560) * 0.02 + window.innerWidth * 0.04;
   const targetY = window.scrollY + rect.top - offset;
