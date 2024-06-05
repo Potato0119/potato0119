@@ -62,7 +62,7 @@
         <li><a onclick="home()">首頁</a></li>
         <li><a onclick="about()">關於我</a></li>
         <li><a onclick="project()">作品集</a></li>
-        <li><a onclick="partner()">我的朋友們</a></li>
+        <li><a onclick="partner()">我朋友們的網站</a></li>
         <li><a href="./math/index.html">高一數學計算機</a></li>
         <br class="rwd">
         <li><a href="./resource/index.html">資源下載專區</a></li>
@@ -171,7 +171,7 @@
 
   <div class="partner" id="partner">
     <p class="partner-title">
-      我的朋友們
+      我朋友們的網站
     </p>
     <div class="PblockGroup">
       <div class="Pblock">
@@ -185,6 +185,12 @@
           <img src="/image/u7.jpg" alt="u7">
           <p>u7</p>
         </a>        
+      </div>
+      <div class="Pblock">
+        <a href="https://ufeelme.potato0119.com" target="_blank">
+          <img src="/image/ufeelme.jpg" alt="ufeelme">
+          <p>ufeelme</p>
+        </a>
       </div>
       <div class="Pblock">
         <a href="https://jimmy.potato0119.com" target="_blank">
@@ -216,17 +222,11 @@
           <p>誠徵朋友</p>
         </a>
       </div>
-      <div class="Pblock">
-        <a href="#here">
-          <img src="/image/question-solid.svg" alt="who">
-          <p>誠徵朋友</p>
-        </a>
-      </div>
     </div>
   </div>
 
   <div class="footer">
-    <div><p>Copyright © 2024・馬鈴薯Potato0119</p></div>
+    <div><p>Copyright © 2024・馬鈴薯Potato0119</p><h6 style="text-align: right;margin-right: 2em">Designed and Developed by Potato0119</h6></div>
   </div>
 
   <script src="./script.js"></script>
