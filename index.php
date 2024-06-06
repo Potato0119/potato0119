@@ -100,7 +100,7 @@
   <a class="clearBtn" onclick="window.location.reload(true)">強制清除快取</a>
   <div class="about" id="about">
     <p class="about-title">關於我</p>
-    <p class="about-text">嗨 很高興認識你 我叫馬鈴薯 英文是Potato0119<br>你可以叫我馬鈴薯 或 破鐵頭 或 Potato 就讀<span>你猜</span>高中<br>我平常的興趣也就是寫寫程式打個遊戲之類的XD<br>如果有靜態網站設計的需求可以找我(請往下滑)</p>
+    <p class="about-text">嗨 很高興認識你 我叫馬鈴薯 英文是Potato0119<br>你可以叫我馬鈴薯 或 破鐵頭 或 Potato<br>就讀<span>你猜</span>高中 於該校擔任軍事研究社社長<br>我平常的興趣也就是寫寫程式打個遊戲之類的XD</p>
     <div class="call">
       <p class="call-title">聯繫方式</p>
       <div class="call-item" onclick="discord()"><img alt="" src="/image/discord.png"/><p>Discord</p></div>

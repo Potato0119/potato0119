@@ -1,4 +1,3 @@
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -84,6 +83,9 @@ body {
 }
 .nav-pc ul li a:hover::after {
   width: 100%;
+}
+.list,.exit-menu,.menu{
+  display: none;
 }
 /* header */
 
