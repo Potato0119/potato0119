@@ -4,7 +4,7 @@
     <!-- meta, title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>資源下載專區 | 馬鈴薯的個人網站 | Potato0119's Web</title>
+    <title>螢幕選購助手 | 馬鈴薯的個人網站 | Potato0119's Web</title>
     <link data-default-icon="../favicon.ico" data-badged-icon="../favicon.ico" rel="shortcut icon" href="../favicon.ico"/>
     
     <!-- CSS -->
@@ -23,7 +23,7 @@
 <body>
     <form method="GET"> 
     <div class="selecters">
-        <p>條件篩選</p>
+        <p>篩選條件</p>
         <div>
         <label for="brand">品牌</label>
         <select name="brand" id="brand">
@@ -123,7 +123,14 @@
     
     // $sql = "SELECT name, brand, px, hz, hdr, curved, radius, onems, inch, money FROM screen WHERE 1=1";
     // $result = $conn->query($sql);
-
+    $brand = isset($_GET['brand']) ? $_GET['brand'] : 0;
+    $px = isset($_GET['px']) ? $_GET['px'] : 0;
+    $hz = isset($_GET['hz']) ? $_GET['hz'] : 0;
+    $hdr = isset($_GET['hdr']) ? $_GET['hdr'] : 2;
+    $curved = isset($_GET['curved']) ? $_GET['curved'] : 2;
+    $onems = isset($_GET['onems']) ? $_GET['onems'] : 2;
+    $inch = isset($_GET['inch']) ? $_GET['inch'] : 0;
+    $btn = isset($_GET['btn']) ? $_GET['btn'] : '';
     if (isset($_GET['btn'])) {
         $sql = "SELECT name, brand, px, hz, hdr, curved, radius, onems, inch, money FROM screen WHERE 1=1";
     
@@ -142,7 +149,7 @@
     
         if ($_GET['hz'] != '0') {
             $hz = $conn->real_escape_string($_GET['hz']);
-            echo "Hz以上&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $hz;
+            echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $hz . "Hz以上";
             $sql .= " AND hz >= '$hz'";
         }
 
@@ -194,7 +201,7 @@
 
     if ($result->num_rows > 0) {
         if (isset($_GET['btn'])) {
-            echo "<table>";
+            echo "<div class='table'><table>";
             echo "<tr class='tr'><th>品牌</th><th>名稱</th><th>畫質</th><th>刷新率</th><th>HDR?</th><th>曲面螢幕?</th><th>曲面R</th><th>1ms?</th><th>尺寸</th><th>價格</th></tr>";
             $brand = $_GET['brand'];
             $px = $_GET['px'];
@@ -234,9 +241,9 @@
             echo "<td>" . $row["money"] . "</td>";
             echo "</tr>";
         }
-        echo "</table>";
+        echo "</table></div>";
     } else {
-        echo "<br><table><tr><td>0 筆結果</td></tr>";
+        echo "<br><div class='table'><table><tr><td>0 筆結果</td></tr></table></div>";
     }
     // echo "<br><p>出現錯誤嗎 點擊 <a href='/GET?brand=0&px=0&hz=0&hdr=0&curved=0&onems=0&inch=0&btn='>這裡修正</a></p>";
     ?>

@@ -37,7 +37,7 @@
     <div id="loadingdiv">
       <i class="fa-duotone fa-spinner"></i>
     </div>
-    <p id="loadingp">載入中...</p>
+    <p id="loadingp" style="width:100vw;text-align:center">載入中...<br>很抱歉 因為託管商限制 故第一次載入速度約為10秒~60秒</p>
   </div>
   <?php
     session_start();
@@ -66,6 +66,7 @@
         <li><a href="./math/index.html">高一數學計算機</a></li>
         <br class="rwd">
         <li><a href="./resource/index.html">資源下載專區</a></li>
+        <li><a href="./screen/?brand=0&px=0&hz=0&hdr=2&curved=2&onems=2&inch=0&btn=">螢幕選購助手</a></li>
         <li><a href="./blog/index.php">馬鈴薯Blog</a></li>
         <li class="loginli"><a href="./login/index.php"><?php echo $username; ?></a>
         <form method='post' action='<?php echo $_SERVER["PHP_SELF"]; ?>'><ul class='accList'><li><input type='submit' name='logout' value='登出'></p></li></ul></form>
