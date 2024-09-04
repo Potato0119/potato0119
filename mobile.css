@@ -570,4 +570,7 @@
       width: 17.36em;
     }
 /* footer */
+  .rwddel{
+    display: none;
+  }
 }

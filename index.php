@@ -227,7 +227,7 @@
   </div>
 
   <div class="footer">
-    <div><p>Copyright © 2024・馬鈴薯Potato0119</p><h6 style="text-align: right;margin-right: 2em">Designed and Developed by Potato0119</h6></div>
+    <div><p>Copyright © 2024・馬鈴薯Potato0119</p><h6 style="text-align: right;margin-right: 2em"><span class="rwddel">Designed and Developed by Potato0119</span></h6></div>
   </div>
 
   <script src="./script.js"></script>
