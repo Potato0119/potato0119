@@ -69,12 +69,7 @@ function start(){
   }
 }
 function onload(){
-  document.getElementById("loading").style.opacity = "0";
-  document.getElementById("loadingimg").style.opacity = "0";
-  document.getElementById("loadingdiv").style.opacity = "0";
-  document.getElementById("loadingp").style.opacity = "0";
   setTimeout(() => {
-    document.getElementById("loading").style.display = "none";
     start()
   }, 500)
 }
