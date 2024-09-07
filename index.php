@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="./reset.css" />
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./mobile.css" />
-  <link rel="preload" href="./image/icon.png" as="image"/>
 
   <!-- icon, robots og-->
   <link type="image/x-icon" href="./favicon.ico" rel="icon" />
@@ -30,6 +29,8 @@
   <meta property="og:title" content="馬鈴薯的個人網站 | Potato0119's Web">
   <meta property="og:description" content="安 我是馬鈴薯！這是我的個人網站 如果有客製網站服務也歡迎找我喔！馬鈴薯的個人網站 Potato0119 PotatoTW">
   <meta property="og:url" content="https://potato0119.com">
+  <link rel="preload" href="./image/banner.jpg" as="image">
+
 </head>
 <body onload="onload()">
   <?php
