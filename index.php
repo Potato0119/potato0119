@@ -80,23 +80,34 @@
   </span>
 
   <div class="main">
-    <img class="banner" id="banner1" alt="" src="./image/banner1.png">
-    <img class="banner" id="banner2" alt="" src="">
-    <img class="banner" id="banner3" alt="" src="">
-    <img class="banner" id="banner4" alt="" src="">
-    <img class="banner" id="banner5" alt="" src="">
-    <img class="banner" id="banner6" alt="" src="">
-    <img class="banner" id="banner7" alt="" src="">
-    <img class="mbanner" alt="" src="/image/mbanner.png">
-    <div class="mainDot">
-      <i class="fa-solid fa-circle-dot" id="dot1" style="color: #ffffff;"></i>
-      <i class="fa-solid fa-circle" id="dot2" style="color: #ffffff;"></i>
-      <i class="fa-solid fa-circle" id="dot3" style="color: #ffffff;"></i>
-      <i class="fa-solid fa-circle" id="dot4" style="color: #ffffff;"></i>
-      <i class="fa-solid fa-circle" id="dot5" style="color: #ffffff;"></i>
-      <i class="fa-solid fa-circle" id="dot6" style="color: #ffffff;"></i>
-      <i class="fa-solid fa-circle" id="dot7" style="color: #ffffff;"></i>
+    <img class="banner" id="banner" alt="" src="./image/banner.jpg">
+    <div class="description">
+      <div class="deDiv1"></div>
+      <div class="deDiv2">
+        <p class="deDiv2Title">哈囉 我是Potato0119</p>
+        <div class="deDiv2Content">
+          <p>這我</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;華江高中 軍事研究社 社長</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;APCS 5分(2024/06)</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;被人說戴口罩像89(?</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;開學時立志要好好讀書</p>
+          <br>
+          <p>特殊技能-開飛機</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;微軟模擬飛行 輔助全關</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;總飛行時數306小時</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;在波音787-10達200小時</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;AirPotato是個人的虛擬航空</p>
+        </div>
+      </div>
     </div>
+    <div class="b787">
+      <img alt="AirPotato是我自己的虛擬航空XD" src="./image/b787.jpg">
+    </div>
+    <div class="me">
+      <p>頭上是洩氣的籃球<br>感謝熱心同學協助拍攝...?</p>
+      <img alt="這就是我 的醜照XD" src="./image/me.png">
+    </div>
+    <img class="mbanner" alt="" src="/image/mbanner.png">
   </div>
   <a class="clearBtn" onclick="window.location.reload(true)">強制清除快取</a>
   <div class="about" id="about">

@@ -185,28 +185,81 @@ body {
   height: calc(100vw/16*9);
   transition: left 300ms ease-in-out;
   position: absolute;
-  left: 150vw;
+  left: 50vw;
   transform: translate(-50%,0);
-}
-#banner1{
-    left: 50vw;
-}
-.mainDot{
-    position: absolute;
-    transform: translate(-50%,0);
-    bottom: 2%;
-    left:50%;
-    z-index: 2;
-    font-size: 1.5vw;
-}
-.mainDot i{
-    margin-left: 1vw;
-    margin-right: 1vw;
 }
 .mbanner{
   width: 100vw;
   height: calc(100vw * 730 / 1440);
   display: none;
+}
+.description{
+  width: 25vw;
+  height:60vh;
+  /* max-width?? */
+  position: absolute;
+  top:30%;
+  left:5%;
+}
+.deDiv1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #c8c8c866;
+  filter: blur(10px);
+  border-radius: 1vw;
+}
+.deDiv2{
+  position: absolute;
+}
+.deDiv2Title{
+  width: 25vw;
+  text-align: center;
+  font-size: 1.8vw;
+  padding-top: 1vw;
+}
+.deDiv2Content{
+  padding-top: 1.5vw;
+  padding-left: 1vw;
+  font-size: 1.6vw;
+}
+.deDiv2Content *{
+  padding-bottom: 0.5vw;
+}
+.b787{
+  width: 20vw;
+  height: calc(20vw / 1312 * 472);
+  position: absolute;
+}
+.b787 img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+  position: absolute;
+  top:calc(100vh - (20vw / 1312 * 472));
+  left:14vw;
+}
+.me{
+  width: 20vw;
+  height: calc(30vw / 1232 * 1672);
+  position: absolute;
+  left:79vw;
+  top:calc(100vh - (20vw / 1232 * 1672));
+}
+.me p{
+  position: relative;
+  background-color: #d5d7d8;
+  border-radius: 1vw;
+  text-align: center;
+  padding: 0.5vw;
+  top:0%;
+  left: 0%;
+}
+.me img{
+  width: 100%;
+  height: calc(100%-10vw);
+  position: relative;
 }
 /* main */
 
@@ -237,13 +290,15 @@ body {
 }
 .about-title {
   font-size: 2vw;
-  display: flex;
+  display: block;
   color: #000;
   position: absolute;
   transform: translate(-50%,0%);
   top:1vw;
   left:50%;
   font-weight: bold;
+  width: 100vw;
+  text-align: center;
 }
 .about-text{
   text-align: center;
@@ -450,12 +505,14 @@ body {
 }
 .project-title {
   font-size: 2vw;
-  display: flex;
+  display: block;
   color: #000;
   position: absolute;
   transform: translate(-50%,0%);
   top:1vw;
   left:50%;
+  width: 100vw;
+  text-align: center;
   font-weight: bold;
 }
 .Gblock{
@@ -544,12 +601,13 @@ body {
 }
 .partner-title {
   font-size: 2vw;
-  display: flex;
+  display: block;
   color: #000;
   position: absolute;
   transform: translate(-50%,0%);
   top:1vw;
   left:50%;
+  width: 100vw;
   font-weight: bold;
   text-align: center;
 }

@@ -43,19 +43,13 @@ function start(){
           back()
       }
     }, 1)
-    document.getElementById('banner2').src = "./image/banner2.png";
-    document.getElementById('banner3').src = "./image/banner3.png";
-    document.getElementById('banner4').src = "./image/banner4.png";
-    document.getElementById('banner5').src = "./image/banner5.png";
-    document.getElementById('banner6').src = "./image/banner6.png";
-    document.getElementById('banner7').src = "./image/banner7.png";
-    // 執行 banner.js
-    setTimeout(() => {
-    var bannerScript = document.createElement('script');
-    bannerScript.src = './banner.js';
-    document.body.appendChild(bannerScript);
-  }, 3000)
-    // 結束
+  //   // 執行 banner.js
+  //   setTimeout(() => {
+  //   var bannerScript = document.createElement('script');
+  //   bannerScript.src = './banner.js';
+  //   document.body.appendChild(bannerScript);
+  // }, 3000)
+  //   // 結束
     setTimeout(() => {
       document.querySelector(".title1").style = "color: #eab532;"
       document.querySelector(".title2").style = "color: #9154d2;"
