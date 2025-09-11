@@ -33,7 +33,7 @@ function start(){
         i++
         if (i == potato.length+2){
           clearInterval(loop1)
-          setTimeout(() => {sub.style = "text-shadow: 0 0 1vw #eab532;"}, 500)
+          setTimeout(() => {sub.style = "color: #92f8ff;text-shadow: 0 0 1vw #034bf3;"}, 500)
         }
       }, 50);
     }, 1000)
@@ -51,8 +51,8 @@ function start(){
   // }, 3000)
   //   // 結束
     setTimeout(() => {
-      document.querySelector(".title1").style = "color: #eab532;"
-      document.querySelector(".title2").style = "color: #9154d2;"
+      document.querySelector(".title1").style = "color: #b5faff;text-shadow: 0 0 1vw #039bf3;"
+      document.querySelector(".title2").style = "color: #f45bfe;text-shadow: 0 0 1vw #d400ff;"
     }, 1000)
     setTimeout(() => {
       const sub = document.querySelector(".sub1")
@@ -62,7 +62,7 @@ function start(){
         i++
         if (i == potato.length+2){
           clearInterval(loop1)
-          setTimeout(() => {sub.style = "text-shadow: 0 0 1vw #eab532;"}, 500)
+          setTimeout(() => {sub.style = "color: #b5faff;text-shadow: 0 0 1vw #034bf3;"}, 500)
         }
       }, 50);
     }, 2000)
@@ -92,14 +92,14 @@ function contact(){
 }
 
 // header
-function header() {
-  if (window.scrollY >= window.innerHeight - ((window.innerWidth * 730 / 2560) * 0.02 + window.innerWidth * 0.04)) {
-    document.getElementById('header').style="background: #aaa;";
-  }else{
-    document.getElementById('header').style="background: transparent;";
-  }
-}
-window.addEventListener('scroll', header);
+// function header() {
+//   if (window.scrollY >= window.innerHeight - ((window.innerWidth * 730 / 2560) * 0.02 + window.innerWidth * 0.04)) {
+//     document.getElementById('header').style="background: #aaa;";
+//   }else{
+//     document.getElementById('header').style="background: transparent;";
+//   }
+// }
+// window.addEventListener('scroll', header);
 
 function home(){
   const homePage = document.querySelector('body');

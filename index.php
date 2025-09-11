@@ -49,7 +49,7 @@
   <div class="header" id="header">
     <div class="title" id="title">
       <img alt="icon" src="/image/icon.png" />
-      <p><span class="title1">馬鈴薯</span><span class="title2">的個人網站</span></p>
+      <p><span class="title1">馬鈴薯的</span><span class="title2">個人網站</span></p>
     </div>
     <nav class="nav-pc">
       <ul class="nav-ul">
@@ -75,38 +75,12 @@
 
   <div class="main">
     <img class="banner" id="banner" alt="" src="./image/banner.jpg">
-    <div class="description">
-      <div class="deDiv1"></div>
-      <div class="deDiv2">
-        <p class="deDiv2Title">哈囉 我是Potato0119</p>
-        <div class="deDiv2Content">
-          <p>這我</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;華江高中 軍事研究社 社長</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;APCS 5分(2024/06)</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;被人說戴口罩像89(?</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;開學時立志要好好讀書</p>
-          <br>
-          <p>特殊技能-開飛機</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;微軟模擬飛行 輔助全關</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;總飛行時數306小時</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;在波音787-10達200小時</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;AirPotato是個人的虛擬航空</p>
-        </div>
-      </div>
-    </div>
-    <div class="b787">
-      <img alt="AirPotato是我自己的虛擬航空XD" src="./image/b787.jpg">
-    </div>
-    <div class="me">
-      <p>頭上是洩氣的籃球<br>感謝熱心同學協助拍攝...?</p>
-      <img alt="這就是我 的醜照XD" src="./image/me.png">
-    </div>
     <img class="mbanner" alt="" src="/image/mbanner.png">
   </div>
   <a class="clearBtn" onclick="window.location.reload(true)">強制清除快取</a>
   <div class="about" id="about">
     <p class="about-title">關於我</p>
-    <p class="about-text">嗨 很高興認識你 我叫馬鈴薯 英文是Potato0119<br>你可以叫我馬鈴薯 或 破鐵頭 或 Potato<br>就讀華江高中 於該校擔任軍事研究社社長<br>我平常的興趣也就是寫寫程式打個遊戲之類的XD</p>
+    <p class="about-text">嗨 很高興認識你 我叫馬鈴薯 英文是Potato0119<br>你可以叫我馬鈴薯 或 破鐵頭 或 Potato<br>就讀華江高中 於該校擔任第九屆軍事研究社社長(已卸任)<br>APCS 7分(4+3, 2025/01)</p>
     <div class="call">
       <p class="call-title">聯繫方式</p>
       <div class="call-item" onclick="discord()"><img alt="" src="/image/discord.png"/><p>Discord</p></div>

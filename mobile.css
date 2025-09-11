@@ -101,38 +101,6 @@
       top:0%;
       background-color: transparent;
     }
-    .description{
-      width: 50vw;
-      height:30vh;
-    }
-    .deDiv1{
-      width: 100%;
-      height: 100%;
-      background-color: #247fe066;
-    }
-    .deDiv2Title{
-      width: 50vw;
-      font-size: 3.6vw;
-    }
-    .deDiv2Content{
-      font-size: 3.2vw;
-    }
-    .b787{
-      width: 48vw;
-      height: calc(48vw / 1312 * 472);
-    }
-    .b787 img{
-      border-radius: 1vw;
-      top:calc(30vh + 46.8vw);
-      left:5%;
-      margin-left:3vw;
-    }
-    .me{
-      width: 50vw;
-      height: calc(50vw / 1232 * 1672);
-      left:50vw;
-      top:calc(100vh - (50vw / 1232 * 1672));
-    }
     /* 第一塊 */
 
     /* 第二塊 */
