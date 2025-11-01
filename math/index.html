@@ -3,7 +3,7 @@
 <head>
   <!-- meta, title -->
   <meta charset="utf-8" />
-  <title>高一數學計算機 | 馬鈴薯的個人網站 | Potato0119's Web</title>
+  <title>排列組合計算機 | 馬鈴薯的個人網站 | Potato0119's Web</title>
   <link data-default-icon="../favicon.ico" data-badged-icon="../favicon.ico" rel="shortcut icon" href="../favicon.ico"/>
 
   <!-- CSS -->
@@ -17,10 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rochester&display=swap" rel="stylesheet">
   <link href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" rel="stylesheet"/>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rochester&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
   <div class="header" id="header">
@@ -31,7 +28,7 @@
     <nav class="nav-pc">
       <ul class="nav-ul">
         <li><a href="../index.php">首頁</a></li>
-        <li><a href="./index.html">高一數學計算機</a></li>
+        <li><a href="./index.html">排列組合計算機</a></li>
         <li><a href="../resource/index.html">資源下載專區</a></li>
         <li><a href=".././screen/?brand=0&px=0&hz=0&hdr=2&curved=2&onems=2&inch=0&btn=">螢幕選購助手</a></li>
         <li><a href="../blog/index.php">馬鈴薯Blog</a></li>
@@ -48,7 +45,7 @@
     <hr width="100%" style="height: 0.25vh;border-width:0;background-color:gray">
     <nav>
       <div><a href="../index.php">首頁</a></div>
-      <div><a href="./index.html">高一數學計算機</a></div>
+      <div><a href="./index.html">排列組合計算機</a></div>
       <div><a href="../resource/index.html">資源下載專區</a></div>
       <div><a href=".././screen/?brand=0&px=0&hz=0&hdr=2&curved=2&onems=2&inch=0&btn=">螢幕選購助手</a></div>
       <div><a href="../blog/index.php">馬鈴薯Blog</a></div>
@@ -65,9 +62,10 @@
       </div>
     </div>
     <div class="calculator">
-      <div class="fDiv" id="fDiv"><input type="text" id="f1"/><p>!&nbsp;=&nbsp;</p><input type="text" id="fResult"/><button id="fBtn"><p>執行</p></button></div>
-      <div class="pDiv" id="pDiv"><p class="pTitle">P</p><input type="text" id="p1"/><input type="text" id="p2"/><p class="pSub">&nbsp;=&nbsp;</p><input type="text" id="pResult"/><button id="pBtn"><p>執行</p></button></div>
-      <div class="cDiv" id="cDiv"><p class="cTitle">C</p><input type="text" id="c1"/><input type="text" id="c2"/><p class="cSub">&nbsp;=&nbsp;</p><input type="text" id="cResult"/><button id="cBtn"><p>執行</p></button></div>
+      <div class="fDiv" id="fDiv"><input type="text" id="f1"/><p>!&nbsp;=&nbsp;</p><p type="text" id="fResult"></p><button id="fBtn"><p>執行</p></button></div>
+      <div class="pDiv" id="pDiv"><p class="pTitle">P</p><input type="text" id="p1"/><input type="text" id="p2"/><p class="pSub">&nbsp;=&nbsp;</p><p type="text" id="pResult"></p><button id="pBtn"><p>執行</p></button></div>
+      <div class="cDiv" id="cDiv"><p class="cTitle">C</p><input type="text" id="c1"/><input type="text" id="c2"/><p class="cSub">&nbsp;=&nbsp;</p><p type="text" id="cResult"></p><button id="cBtn"><p>執行</p></button></div>
+      <div class="description" id="description"><p></p></div>
     </div>
   </div>
 

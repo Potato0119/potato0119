@@ -226,6 +226,9 @@ body {
 #cBtn{
   left:12.5vw;
 }
+.description{
+  font-size: 1.5vw !important;
+}
 /* content */
 
 /* footer */

@@ -56,8 +56,8 @@
         <li><a onclick="home()">首頁</a></li>
         <li><a onclick="about()">關於我</a></li>
         <li><a onclick="project()">作品集</a></li>
-        <li><a onclick="partner()">我朋友們的網站</a></li>
-        <li><a href="./math/index.html">高一數學計算機</a></li>
+        <li><a onclick="partner()">朋友的網站</a></li>
+        <li><a href="./math/index.html">排列組合計算機</a></li>
         <br class="rwd">
         <li><a href="./resource/index.html">資源下載專區</a></li>
         <li><a href="./screen/?brand=0&px=0&hz=0&hdr=2&curved=2&onems=2&inch=0&btn=">螢幕選購助手</a></li>
@@ -140,18 +140,18 @@
       這些是我的作品<br class="rwd">有但不多
     </p>
     <div class="Gblock">
-      <a href="https://reurl.cc/YV9M3X" target="_blank"><div class="block block1"><img alt="" src="/image/ts.png" ><p>DC-廢話機器人</p></div></a>
-      <a href="https://reurl.cc/xLK6aE" target="_blank"><div class="block block2"><img alt="" src="/image/betBOTato.png" ><p>DC-對賭機器人</p></div></a>
-      <a href="/math/index.html"><div class="block block3"><img alt="" src="/image/math.png" ><p>高一數學計算機</p></div></a>
-      <a href="https://www.instagram.com/reel/Cs-57kCOqV2/" target="_blank"><div class="block block4"><img alt="" src="/image/media1.png" ><p>IG-小帥的冒險1</p></div></a>
-      <a href="https://www.instagram.com/reel/Cs_a2gZsAYp/" target="_blank"><div class="block block5"><img alt="" src="/image/media1.png" ><p>IG-小帥的冒險2</p></div></a>
-      <a href="https://www.instagram.com/reel/CtBE1KsOUOi/" target="_blank"><div class="block block6"><img alt="" src="/image/media1.png" ><p>IG-小帥的冒險3</p></div></a>
+      <a onclick="ts()" target="_blank"><div class="block block1"><img alt="" src="/image/ts.png" ><p>DC-廢話機器人</p></div></a>
+      <a onclick="bet()" target="_blank"><div class="block block2"><img alt="" src="/image/betBOTato.png" ><p>DC-對賭機器人</p></div></a>
+      <a href="/math/index.html"><div class="block block3"><img alt="" src="/image/math.png" ><p>排列組合計算機</p></div></a>
+      <!-- <a href=""><div class="block block4"><img alt="" src="/image/media1.png" ><p>開發中</p></div></a>
+      <a href=""><div class="block block5"><img alt="" src="/image/media1.png" ><p>開發中</p></div></a>
+      <a href=""><div class="block block6"><img alt="" src="/image/media1.png" ><p>開發中</p></div></a> -->
     </div>
   </div>
 
   <div class="partner" id="partner">
     <p class="partner-title">
-      我朋友們的網站
+      朋友的網站
     </p>
     <div class="PblockGroup">
       <div class="Pblock">
@@ -171,7 +171,7 @@
           <img src="/image/ufeelme.jpg" alt="ufeelme">
           <p>ufeelme</p>
         </a>
-      </div>
+      </div>  
       <div class="Pblock">
         <a href="https://jimmy.potato0119.com" target="_blank">
           <img src="/image/jimmy.jpg" alt="jimmy">

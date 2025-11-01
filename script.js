@@ -90,6 +90,30 @@ function contact(){
     confirmButtonText: '酷',
   });
 }
+function ts(){
+  Swal.fire({
+    title: '廢話機器人介紹',
+    html: '廢話機器人是一個Discord機器人<br>它是一個使用大量使用者反饋的"廢話"<br>對於這些東西給予編號並儲存<br>等到有人使用指令"/ts"<br>再用隨機的方式去抽一個句廢話回覆給使用者',
+    icon: "info",
+    confirmButtonText: '太棒了，點我試試',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.open("https://reurl.cc/YV9M3X", "_blank");
+    }
+  });
+}
+function bet(){
+  Swal.fire({
+    title: '對賭機器人介紹',
+    html: '對賭機器人是一個Discord機器人<br>使用你的本金去與他對賭<br>有二分之一的機率會得到1.85倍的錢 表示贏錢<br>但也有二分之一的機率會輸錢 表示輸錢<br>使用"/bet {下注金額}"就可以進行對賭',
+    icon: "info",
+    confirmButtonText: '太棒了，點我試試',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.open("https://reurl.cc/xLK6aE", "_blank");
+    }
+  });
+}
 
 // header
 // function header() {

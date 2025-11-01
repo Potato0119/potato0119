@@ -447,37 +447,19 @@ body {
 .block1{
   position: absolute;
   transform: translate(-50%,0);
-  top:2vw;
+  top:12vw;
   left: calc(50% - 20vw);
 }
 .block2{
   position: absolute;
   transform: translate(-50%,0);
-  top:2vw;
+  top:12vw;
   left: 50%;
 }
 .block3{
   position: absolute;
   transform: translate(-50%,0);
-  top:2vw;
-  left: calc(50% + 20vw);
-}
-.block4{
-  position: absolute;
-  transform: translate(-50%,0);
-  top:22vw;
-  left: calc(50% - 20vw);
-}
-.block5{
-  position: absolute;
-  transform: translate(-50%,0);
-  top:22vw;
-  left: 50%;
-}
-.block6{
-  position: absolute;
-  transform: translate(-50%,0);
-  top:22vw;
+  top:12vw;
   left: calc(50% + 20vw);
 }
 /* project */
