@@ -538,7 +538,8 @@ body {
   transform: translate(-50%,-50%);
   top:50%;
   left:50%;
-  background-color: #fff;
+  background-color: rgba(88, 154, 252, 0.32); /* 半透明白色 */
+  backdrop-filter: blur(10px);
   padding-top: 1.5%;
   padding-bottom: 1.5%;
   width: 100%;
