@@ -16,6 +16,19 @@ function isMobileDevice() {
   return false;
 }
 
+function getTime(){
+  const d = new Date();
+  const year = d.getFullYear();
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const date = String(d.getDate()).padStart(2, '0');
+  const hh = String(d.getHours()).padStart(2, '0');
+  const mm = String(d.getMinutes()).padStart(2, '0');
+  const ss = String(d.getSeconds()).padStart(2, '0');
+  const week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const day = week[d.getDay()];
+  return `${year}/${month}/${date} ${hh}:${mm}:${ss} ${day}.`;
+}
+
 // 起始動畫
 const potato = "Potato0119's Web"
 function start(){
@@ -51,8 +64,7 @@ function start(){
   // }, 3000)
   //   // 結束
     setTimeout(() => {
-      document.querySelector(".title1").style = "color: #b5faff;text-shadow: 0 0 1vw #039bf3;"
-      document.querySelector(".title2").style = "color: #f45bfe;text-shadow: 0 0 1vw #d400ff;"
+      document.querySelector(".title1").style = "color: #fdcf6dff;text-shadow: 0 0 1vw #f3b303ff;"
     }, 1000)
     setTimeout(() => {
       const sub = document.querySelector(".sub1")
@@ -66,6 +78,14 @@ function start(){
         }
       }, 50);
     }, 2000)
+    setTimeout(() => {
+      const sub2 = document.querySelector(".sub2")
+      sub2.style = "opacity: 1;"
+    }, 4000)
+    setInterval(() => {
+      const sub2 = document.querySelector(".sub2")
+      sub2.innerHTML = getTime()
+    }, 50);
   }
 }
 function onload(){
@@ -165,4 +185,74 @@ function back(){
   window.scrollTo({
     top: 0
   });
+}
+
+// Background Music System 
+const bmsList = [
+  {
+    id: 1,
+    name: "Sweet Life (Luxury Chill) - AlexGrohl",
+    path: "bms/1.mp3"
+  },
+  {
+    id: 2,
+    name: "Hype | Drill Music - kontraa",
+    path: "bms/2.mp3"
+  },
+  {
+    id: 3,
+    name: "Future Design - penguinmusic",
+    path: "bms/3.mp3"
+  }
+];
+
+const bms = document.getElementById('bms-play');
+const bmsText = document.querySelector('#bms-text span');
+const nextBtn = document.getElementById('bms-forward');
+const prevBtn = document.getElementById('bms-backward');
+const audio = document.getElementById("player");
+const volume = document.getElementById("bms-volume-scale");
+let index = 0;
+
+bms.addEventListener('click', () => {
+  if (bms.classList.contains('fa-pause')) {
+    bms.classList.remove('fa-pause');
+    bms.classList.add('fa-play');
+    audio.pause();
+  } else {
+    bms.classList.remove('fa-play');
+    bms.classList.add('fa-pause');
+    audio.play();
+  }
+});
+nextBtn.addEventListener('click', () => {
+  index = (index + 1) % bmsList.length;
+  player.src = bmsList[index].path;
+  bmsText.textContent = bmsList[index].name;
+  player.play();
+  bms.classList.replace('fa-play', 'fa-pause');
+});
+prevBtn.addEventListener('click', () => {
+  index = (index - 1 + bmsList.length) % bmsList.length;
+  player.src = bmsList[index].path;
+  bmsText.textContent = bmsList[index].name;
+  player.play();
+  bms.classList.replace('fa-play', 'fa-pause');
+});
+audio.addEventListener('ended', () => {
+  index = (index + 1) % bmsList.length;
+  audio.src = bmsList[index].path;
+  bmsText.textContent = bmsList[index].name;
+  audio.play();
+});
+
+audio.volume = 1;
+volume.addEventListener("input", () => {
+  console.log(volume.value)
+  audio.volume = volume.value / 1000;
+});
+function enableAutoPlay() {
+  audio.play()
+    .then(() => console.log("已自動播放"))
+    .catch(err => console.log("播放被阻擋:", err));
 }

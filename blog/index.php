@@ -35,7 +35,6 @@
               <li><a href="./../index.php">首頁</a></li>
               <li><a href="../math/index.html">排列組合計算機</a></li>
               <li><a href="../resource/index.html">資源下載專區</a></li>
-              <li><a href=".././screen/?brand=0&px=0&hz=0&hdr=2&curved=2&onems=2&inch=0&btn=">螢幕選購助手</a></li>
               <li><a href="./index.php">馬鈴薯Blog</a></li>
               <li><a href="../login/index.php">註冊登入系統</a></li>
             </ul>
@@ -53,7 +52,6 @@
         <div><a href="../index.php">首頁</a></div>
         <div><a href="../math/index.html">排列組合計算機</a></div>
         <div><a href="../resource/index.html">資源下載專區</a></div>
-        <div><a href=".././screen/?brand=0&px=0&hz=0&hdr=2&curved=2&onems=2&inch=0&btn=">螢幕選購助手</a></div>
         <div><a href="./index.html">馬鈴薯Blog</a></div>
         <div><a href="../login/index.php">註冊登入系統</a></div>
       </nav>
